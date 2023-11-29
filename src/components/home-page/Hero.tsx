@@ -1,6 +1,16 @@
 import Typewriter from "typewriter-effect";
 
+interface IbuttonHero {
+  label: string;
+  id:string
+}
+
 const Hero = (): JSX.Element => {
+  const buttonHero: IbuttonHero[] = [
+    { label: "Book my CV" , id:"btn1"},
+    { label: "See my realisations" , id:"btn2"},
+  ];
+
   return (
     <section id="home-hero">
       <div id="home-hero__container">
@@ -33,10 +43,21 @@ const Hero = (): JSX.Element => {
                   />
                 </h3>
               </div>
-              <div className="text">
-                <p></p>
+              <div className="text mt-4">
+                <p>
+                  I'm a Javascript fullstack Developer, I am looking for
+                  efficiency, effectiveness of all my programs , I'm using
+                  mostly for dynamic Web App <b> REACT JS and TYPESCRIPT JS</b>{" "}
+                  for frontend and <b>NODE JS </b> for serverside{" "}
+                </p>
               </div>
-              <div className="button"></div>
+              <div className="button mt-4">
+                {buttonHero.map((item, index) => (
+                  <div key={index}>
+                    <button className="btn" id={`${item.id}`}>{item.label}</button>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="col-6">

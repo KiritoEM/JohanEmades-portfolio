@@ -36,6 +36,41 @@
                     color: $yellow;
                 }
             }
+
+            .text{
+
+                p{
+                    color: #fff;
+                    font-size: 19px;
+                }
+            }
+
+            .button{
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                 .btn{
+                    width: 100%;
+                    font-size: 16px;
+                    padding-left: 38px;
+                    padding-right: 38px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                 }
+
+                 #btn1{
+                    background-color: $yellow;
+                    color: $black;
+                    font-weight: bold;
+                 }
+
+                 #btn2{
+                    border: 2px solid $yellow;
+                    color: #fff;
+                    font-weight: bold;
+                 }
+            }
         }
     }
 }
