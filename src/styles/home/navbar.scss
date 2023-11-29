@@ -1,8 +1,11 @@
         #nav {
             padding: 0;
             margin: 0;
+            position: fixed;
+            z-index: 200;
 
             &__container {
+                position: fixed;
                 width: 100%;
                 height: 5rem;
                 background-color: $black;

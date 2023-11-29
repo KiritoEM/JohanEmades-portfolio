@@ -12,4 +12,6 @@ $bg-color: rgb(19, 18, 18);
 
 body{
     background-color: $bg-color;
+    width: 100%;
+    overflow: hidden;
 }
