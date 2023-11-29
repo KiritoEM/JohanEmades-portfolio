@@ -1,56 +1,68 @@
-    #nav {
-        padding: 0;
-        margin: 0;
+        #nav {
+            padding: 0;
+            margin: 0;
 
-        &__container {
-            width: 100%;
-            height: 5rem;
-            background-color: $black;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            //include container to navbar
-            @include container;
-
-            //navbar logo
-            .logo {
-                height: 100%;
+            &__container {
+                width: 100%;
+                height: 5rem;
+                background-color: $black;
                 display: flex;
-                align-items: center;
-                padding: 0;
-                margin: 0;
+                flex-direction: row;
+                justify-content: space-between;
+                //include container to navbar
+                @include container;
 
-                img {
-                    width: 55px;
-                    object-fit: cover;
-                }
-
-                h4 {
-                    color: #fff;
-                    margin-top: 8px;
-                    font-weight: bold;
-                    margin-left: 0.5%;
-
-                     span{
-                        color: $yellow;
-                     }
-                }
-            }
-
-            .menu-items{
-                height: 100%;
-
-                 ul{
+                //navbar logo
+                .logo {
+                    height: 100%;
                     display: flex;
                     align-items: center;
-                    height: 100%;
-                    gap: 40px;
+                    padding: 0;
+                    margin: 0;
 
-                     li{
+                    img {
+                        width: 55px;
+                        object-fit: cover;
+                    }
+
+                    h4 {
                         color: #fff;
+                        margin-top: 8px;
                         font-weight: bold;
-                     }
-                 }
+                        margin-left: 0.5%;
+
+                        span {
+                            color: $yellow;
+                        }
+                    }
+                }
+
+                .menu-items {
+                    height: 100%;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        gap: 24px;
+
+                        li {
+                            color: #fff;
+                            font-weight: bold;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                        }
+
+                        #btn-contact {
+                            position: relative;
+                            left: 4%;
+                            border: 2px solid $yellow;
+                            border-radius: 7px;
+                            padding-left: 25px;
+                            padding-right: 30px;
+                            background-color: rgb(32, 32, 32);
+                        }
+                    }
+                }
             }
         }
-    }
