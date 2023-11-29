@@ -14,7 +14,7 @@ const Hero = (): JSX.Element => {
   return (
     <section id="home-hero">
       <div id="home-hero__container">
-        <div className="row">
+        <div className="row gx-4">
           <div className="col-6">
             <div className="section-header">
               <div className="title">
@@ -61,7 +61,9 @@ const Hero = (): JSX.Element => {
             </div>
           </div>
           <div className="col-6">
-            <div className="section-cover"></div>
+            <div className="section-cover">
+                 <img src="/images/screen.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
