@@ -9,20 +9,30 @@
     padding-bottom: 6rem;
     @include container;
 
-    .overview-item {
+    .row {
       width: 100%;
-      text-align: center;
-      border-right: 2px solid $yellow;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      height: 100%;
+      background-color: $dark-grey;
+      padding-top: 47px;
+      padding-bottom: 47px;
+      border-radius: 8px;
 
-      h3 {
-        color: $yellow;
-        font-weight: bold;
-      }
+      .overview-item {
+        width: 100%;
+        text-align: center;
+        border-right: 2.5px solid $yellow;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
-      h5 {
-        color: #fff;
+        h3 {
+          color: $yellow;
+          font-weight: bold;
+        }
+
+        h5 {
+          color: #fff;
+          font-weight: bold;
+        }
       }
     }
 

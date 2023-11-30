@@ -24,7 +24,7 @@ export default function dataHelper() {
 
   const overviewData = [
     { label: "Projects", statisitic: 15 },
-    { label: "Repositories", statisitic: 17 },
+    { label: "Repositories", statisitic: 21 },
     { label: "Satisfied client", statisitic: 5 , id:"last-column"},
   ];
 
