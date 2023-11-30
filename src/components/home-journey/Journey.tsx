@@ -13,7 +13,7 @@ const Journey = (): JSX.Element => {
             <h4>My studies</h4>
           </div>
           <div className="title mt-2">
-            <h2>The path that I have crossed</h2>
+            <h3>The path that I have crossed</h3>
           </div>
         </div>
         <div className="journey-container">

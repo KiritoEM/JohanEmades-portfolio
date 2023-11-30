@@ -7,7 +7,7 @@ type IbuttonHero = {
 
 const Hero = (): JSX.Element => {
   const buttonHero: IbuttonHero[] = [
-    { label: "Book my CV", id: "btn1" },
+    { label: "Download my CV", id: "btn1" },
     { label: "See my realisations", id: "btn2" },
   ];
 
@@ -45,7 +45,7 @@ const Hero = (): JSX.Element => {
               </div>
               <div className="text mt-4">
                 <p>
-                  I'm a Javascript fullstack Developer, I am looking for
+                  I'm a Javascript  Developer, I am looking for
                   efficiency, effectiveness of all my programs , I'm using
                   mostly for dynamic Web App <b> REACT JS and NEXT JS</b> for
                   frontend and <b>NODE JS </b> for serverside{" "}

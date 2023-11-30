@@ -1,0 +1,43 @@
+#home-preview {
+    width: 100%;
+    overflow: hidden;
+    height: max-content;
+
+    &__container {
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include container;
+
+        .section-header {
+            .subtitle {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                h4 {
+                    color: $yellow;
+                    font-weight: bold;
+                    margin-left: 15px;
+                }
+
+                @include spin;
+            }
+
+            .title{
+
+                 h3{
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                 }
+            }
+        }
+
+        .section-content{
+            width: 100%;
+        }
+    }
+}

@@ -1,3 +1,6 @@
+import { faCode, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const About = (): JSX.Element => {
   return (
     <section id="home-about">
@@ -32,7 +35,9 @@ const About = (): JSX.Element => {
                   I discover and learn new thing about IT development.
                 </p>
               </div>
-              <div className="button"></div>
+              <div className="button mt-4">
+                 <button className="btn"><FontAwesomeIcon icon={faEnvelope} className="mx-2"/> Contact me</button>
+              </div>
             </div>
           </div>
         </div>
