@@ -2,11 +2,13 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dataHelper from "@/helpers/dataHelper";
 import JourneyCard from "../childrenComponents/JourneyCard";
+import Fade from "react-reveal/Fade";
 
 const Journey = (): JSX.Element => {
   const { journeyData } = dataHelper();
   return (
-    <section id="home-journey">
+    <Fade bottom cascade>
+      <section id="home-journey">
         <div className="header">
           <div className="subtitle">
             <div className="spinner"></div>
@@ -21,7 +23,8 @@ const Journey = (): JSX.Element => {
             <JourneyCard key={index} {...item} />
           ))}
         </div>
-    </section>
+      </section>
+    </Fade>
   );
 };
 

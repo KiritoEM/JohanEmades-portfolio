@@ -26,7 +26,7 @@
             height: 29rem;
             overflow: hidden;
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            animation: oscillateImage 5s linear infinite;
+            animation: oscillateImage 4s linear infinite;
 
             @keyframes oscillateImage {
                 0% {
