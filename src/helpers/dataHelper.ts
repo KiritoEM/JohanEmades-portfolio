@@ -40,11 +40,11 @@ export default function dataHelper() {
     { label: "Contact", icon: faEnvelope, id: "btn-contact" },
   ];
 
-  const overviewData = [
-    { label: "Projects", statisitic: 15 },
-    { label: "Repositories", statisitic: 21 },
-    { label: "Contributions", statisitic: 5, id: "last-column" },
-  ];
+    const overviewData = [
+      { label: "Projects", statisitic: 15 },
+      { label: "Repositories", statisitic: 21 },
+      { label: "Contributions", statisitic: 7, id: "last-column" },
+    ];
 
   const journeyData: IjourneyData[] = [
     {

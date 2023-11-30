@@ -26,7 +26,7 @@
             height: 29rem;
             overflow: hidden;
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            animation: oscillateImage 8s linear infinite;
+            animation: oscillateImage 5s linear infinite;
 
             @keyframes oscillateImage {
                 0% {
@@ -35,17 +35,17 @@
                 }
 
                 25% {
-                    transform: translate(0, 0) rotate(5deg);
+                    transform: translate(0, 0) rotate(8deg);
                     transform-origin: left top;
                 }
 
                 50% {
-                    transform: translate(0, 0) rotate(0deg);
+                    transform: translate(0, 0) rotate(01deg);
                     transform-origin: left top;
                 }
 
                 75% {
-                    transform: translate(0, 0) rotate(-5deg);
+                    transform: translate(0, 0) rotate(-2deg);
                     transform-origin: left top;
                 }
 
@@ -66,7 +66,6 @@
             height: max-content;
             width: 100%;
             padding-top: 3rem;
-            margin-left: 12%;
 
             .subtitle {
                 display: flex;

@@ -6,7 +6,7 @@ const FooterForm = (): JSX.Element => {
     <div className="col-6">
         <div className="title">
               <h3>
-                <FontAwesomeIcon icon={faEnvelope} /> Send Email
+                <FontAwesomeIcon icon={faEnvelope} className="mx-2" /> Send Email
               </h3>
               <div className="line"></div>
         </div>
@@ -19,7 +19,7 @@ const FooterForm = (): JSX.Element => {
                   name="email"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Votre email ..."
+                  placeholder="Your email ..."
                 />
               </div>
               <div className="form-group mt-4">
@@ -28,12 +28,12 @@ const FooterForm = (): JSX.Element => {
                   className="form-control"
                   id="exampleInputPassword1"
                   name="password"
-                  placeholder="Votre messsage ..."
+                  placeholder="Your messsage ..."
                 />
               </div>
               <div className="button mt-4">
                 <button type="submit" className="btn">
-                  Envoyer
+                  Send Email
                 </button>
               </div>
          </form>

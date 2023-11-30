@@ -1,4 +1,4 @@
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dataHelper from "@/helpers/dataHelper";
 import FooterForm from "./FooterForm";
@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => {
           <div className="col-6">
             <div className="title">
               <h3>
-                <FontAwesomeIcon icon={faEnvelope} /> Contact-me
+                <FontAwesomeIcon icon={faUser} className="mx-2" /> Contact-me
               </h3>
               <div className="line"></div>
             </div>
