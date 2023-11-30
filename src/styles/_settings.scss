@@ -11,8 +11,31 @@ $dark-grey: #292828d3;
     list-style: none;
 }
 
-body{
+body {
     background-color: $bg-color;
     width: 100%;
     // overflow: hidden;
+}
+
+@mixin spin {
+
+
+    .spinner {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 5.4px solid $yellow;
+        border-top: 4px solid transparent;
+        animation: spin 1.8s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
