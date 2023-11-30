@@ -2,46 +2,45 @@
         width: 100%;
         overflow: hidden;
         height: max-content;
+        height: 100%;
+        overflow: hidden;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        @include container;
 
-        &__container {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            padding-top: 3rem;
-            padding-bottom: 5rem;
-            @include container;
+        .header {
+            text-align: center;
 
-            .header {
-                text-align: center;
+            .subtitle {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
 
-                .subtitle {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-
-                    h4 {
-                        color: $yellow;
-                        font-weight: bold;
-                        margin-left: 15px;
-                    }
-
-                    @include spin;
+                h4 {
+                    color: $yellow;
+                    font-weight: bold;
+                    margin-left: 15px;
                 }
 
-                .title {
+                @include spin;
+            }
 
-                    h2 {
-                        color: #fff;
-                        font-weight: bold;
+            .title {
 
-                        span {
-                            color: $yellow;
-                        }
+                h2 {
+                    color: #fff;
+                    font-weight: bold;
+
+                    span {
+                        color: $yellow;
                     }
                 }
             }
+        }
 
-            .app-content {
+        .journey-container {
+
+            .journey-card {
                 width: 100%;
                 height: max-content;
                 margin-top: 2rem;
@@ -63,10 +62,10 @@
                         align-items: center;
                         justify-content: center;
 
-                         #icon{
+                        #icon {
                             font-size: 32px;
                             color: $bg-color;
-                         }
+                        }
                     }
 
                     .line {
@@ -79,10 +78,12 @@
 
                 .second-section {
                     border-radius: 12px;
-                    width: 70%;
+                    width: 85%;
                     margin-top: 2rem;
                     overflow: hidden;
                     background-color: $dark-grey;
+                    display: flex;
+                    justify-content: center;
 
                     .section-cover {
                         width: 100%;
@@ -97,28 +98,30 @@
                         }
                     }
 
-                    .section-header{
-                        padding: 19px;
+                    .section-header {
+                        padding: 23px;
 
-                         h5{
+                        h5 {
                             color: $yellow;
                             font-weight: bold;
-                         }
+                        }
 
-                         .line{
+                        .line {
                             width: 85%;
                             border-radius: 8px;
                             height: 2px;
                             background-color: $yellow;
                             text-align: start;
-                         }
+                        }
 
-                         p{
+                        p {
                             margin-top: 1rem;
                             color: #fff;
-                         }
+                            width: 90%;
+                        }
                     }
                 }
             }
         }
+
     }
