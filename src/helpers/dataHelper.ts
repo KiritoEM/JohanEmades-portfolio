@@ -1,6 +1,7 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import {
   faCode,
+  faDatabase,
   faEnvelope,
   faGraduationCap,
   faHome,
@@ -8,18 +9,26 @@ import {
   faUniversity,
 } from "@fortawesome/free-solid-svg-icons";
 
-interface ImenuItems {
+type ImenuItems = {
   label: string;
   url?: string;
-  icon: IconProp;
+  icon: IconProp | null;
   id?: string;
-}
+};
 
 interface IjourneyData {
   icon: IconProp;
   img: string;
   title: string;
   text: string;
+}
+
+interface IpreviewData {
+  img: string;
+  title: string;
+  text: string;
+  usage: string;
+  icon: IconProp;
 }
 
 export default function dataHelper() {
@@ -52,5 +61,29 @@ export default function dataHelper() {
     },
   ];
 
-  return { navItems, overviewData, journeyData };
+  const previewTechno: IpreviewData[] = [
+    {
+      img: "/images/react.png",
+      title: "React js",
+      text: "The ultimate and popular Javascript Framework for the frontend to build a powerful view",
+      usage: "Frontend",
+      icon: faLaptop,
+    },
+    {
+      img: "/images/next.jpg",
+      title: "Next js",
+      text: "Next.js enables to create full-stack Web applications by extending the latest React features",
+      usage: "Frontend",
+      icon: faLaptop,
+    },
+    {
+      img: "/images/node.jpg",
+      title: "Node js",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Backend",
+      icon: faDatabase,
+    },
+  ];
+
+  return { navItems, overviewData, journeyData, previewTechno };
 }
