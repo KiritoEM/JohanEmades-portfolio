@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BoxPreview from "../childrenComponents/BoxPreview";
 import dataHelper from "@/helpers/dataHelper";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const TechnoPreview = (): JSX.Element => {
   const { previewTechno } = dataHelper();
@@ -21,6 +23,9 @@ const TechnoPreview = (): JSX.Element => {
             {previewTechno.map((item, index) => (
               <BoxPreview key={index} {...item} />
             ))}
+          </div>
+          <div className="btn-all">
+             <button className="btn"><FontAwesomeIcon icon={faCode} className="mx-2"/> See all my techno</button>
           </div>
         </div>
       </div>

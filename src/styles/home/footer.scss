@@ -1,0 +1,42 @@
+#footer {
+    width: 100%;
+    height: max-content;
+    background-color: $black;
+    box-shadow: 0 -7px 7px rgb(14, 13, 13);
+    margin-top: 2rem;
+
+    &__container {
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        @include container;
+
+        .title{
+
+             h3{
+                color: $yellow;
+                font-weight: bold;
+             }
+        }
+
+         .section-info{
+            margin-top: 2rem;
+            width: 100%;
+            height: max-content;
+            background-color: $dark-grey;
+            border-radius: 4px;
+            padding: 18px;
+
+             .item{
+                p{
+                    display: flex;
+                    flex-direction: row;
+                    height: 100%;
+                    align-items: center;
+                    color: #fff;
+                    font-size: 18px;
+                }
+             }
+         }
+    }
+}

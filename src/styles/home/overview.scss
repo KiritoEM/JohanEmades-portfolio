@@ -10,13 +10,14 @@
     @include container;
 
     .row {
-      width: 100%;
+      width: 84%;
+      margin: auto;
       height: 100%;
       background-color: $dark-grey;
       padding-top: 40px;
       padding-bottom: 40px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
       border-radius: 8px;
 
       .overview-item {

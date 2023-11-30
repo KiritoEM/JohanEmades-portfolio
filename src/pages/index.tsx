@@ -6,6 +6,7 @@ import Overview from "@/components/home-overview/Overview";
 import About from "@/components/home-about/About";
 import Journey from "@/components/home-journey/Journey";
 import TechnoPreview from "@/components/home-technopreview/TechnoPreview";
+import Footer from "@/components/Footer";
 
 const homePage = (): JSX.Element => {
   const { metaTitle } = metaHelper();
@@ -22,7 +23,9 @@ const homePage = (): JSX.Element => {
           <TechnoPreview />
         </main>
 
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </section>
     </Layout>
   );
