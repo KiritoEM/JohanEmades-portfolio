@@ -11,32 +11,39 @@
         padding-bottom: 4rem;
         @include container;
 
-        .title{
+        .title {
 
-             h3{
+            h3 {
                 color: $yellow;
                 font-weight: bold;
-             }
+            }
         }
 
-         .section-info{
-            margin-top: 2rem;
+        .line{
+            width: 60%;
+            border-radius: 8px;
+            height: 4px;
+            background-color: $yellow;
+        }
+
+        .section-info {
+            margin-top: 1rem;
             width: 100%;
             height: max-content;
-            background-color: $dark-grey;
-            border-radius: 4px;
             padding: 18px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
 
-             .item{
-                p{
-                    display: flex;
-                    flex-direction: row;
-                    height: 100%;
-                    align-items: center;
-                    color: #fff;
-                    font-size: 18px;
+            .social-icons {
+                padding: 15px 40px 15px 40px;
+                border-radius: 5px;
+                background-color: $dark-grey;
+
+                img {
+                    width: 28px;
                 }
-             }
-         }
+            }
+        }
     }
 }

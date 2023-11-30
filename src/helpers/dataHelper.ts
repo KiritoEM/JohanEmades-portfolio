@@ -85,5 +85,7 @@ export default function dataHelper() {
     },
   ];
 
-  return { navItems, overviewData, journeyData, previewTechno };
+  const socialIcons = [{ icon: "/images/facebook .png" }, { icon: "/images/github.png" }, { icon: "/images/linkedin.png" }];
+
+  return { navItems, overviewData, journeyData, previewTechno, socialIcons };
 }
