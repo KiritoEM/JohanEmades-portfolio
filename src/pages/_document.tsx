@@ -26,6 +26,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <body>
         <Main />

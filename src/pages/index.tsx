@@ -1,7 +1,8 @@
 import Layout from "./Layout";
 import metaHelper from "@/helpers/metaHelper";
 import PageHeading from "./PageHeading";
-import Hero from "@/components/home-page/Hero";
+import Hero from "@/components/home-hero/Hero";
+import Overview from "@/components/home-overview/Overview";
 
 const homePage = (): JSX.Element => {
   const { metaTitle } = metaHelper();
@@ -12,6 +13,7 @@ const homePage = (): JSX.Element => {
         {/* ===================home body=============== */}
         <main>
           <Hero />
+          <Overview />
         </main>
 
         <footer></footer>

@@ -1,14 +1,14 @@
 import Typewriter from "typewriter-effect";
 
-interface IbuttonHero {
+type IbuttonHero = {
   label: string;
-  id:string
-}
+  id: string | null;
+};
 
 const Hero = (): JSX.Element => {
   const buttonHero: IbuttonHero[] = [
-    { label: "Book my CV" , id:"btn1"},
-    { label: "See my realisations" , id:"btn2"},
+    { label: "Book my CV", id: "btn1" },
+    { label: "See my realisations", id: "btn2" },
   ];
 
   return (
@@ -47,14 +47,16 @@ const Hero = (): JSX.Element => {
                 <p>
                   I'm a Javascript fullstack Developer, I am looking for
                   efficiency, effectiveness of all my programs , I'm using
-                  mostly for dynamic Web App <b> REACT JS and TYPESCRIPT JS</b>{" "}
-                  for frontend and <b>NODE JS </b> for serverside{" "}
+                  mostly for dynamic Web App <b> REACT JS and NEXT JS</b> for
+                  frontend and <b>NODE JS </b> for serverside{" "}
                 </p>
               </div>
               <div className="button mt-4">
                 {buttonHero.map((item, index) => (
                   <div key={index}>
-                    <button className="btn" id={`${item.id}`}>{item.label}</button>
+                    <button className="btn" id={`${item.id}`}>
+                      {item.label}
+                    </button>
                   </div>
                 ))}
               </div>
@@ -62,7 +64,7 @@ const Hero = (): JSX.Element => {
           </div>
           <div className="col-6">
             <div className="section-cover">
-                 <img src="/images/screen.png" alt="" />
+              <img src="/images/MERN_couv.jpg" alt="" />
             </div>
           </div>
         </div>

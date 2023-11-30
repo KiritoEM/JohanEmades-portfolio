@@ -1,0 +1,33 @@
+#home-overview {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+
+  &__container {
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    @include container;
+
+    .overview-item {
+      width: 100%;
+      text-align: center;
+      border-right: 2px solid $yellow;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      h3 {
+        color: $yellow;
+        font-weight: bold;
+      }
+
+      h5 {
+        color: #fff;
+      }
+    }
+
+    #last-column {
+      border-right: 0;
+    }
+  }
+}
