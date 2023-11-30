@@ -8,7 +8,7 @@ const About = (): JSX.Element => {
               <img src="/images/pdp.jpg" alt="" />
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-7">
             <div className="section-header">
               <div className="subtitle">
                 <div className="spinner"></div>
@@ -20,7 +20,7 @@ const About = (): JSX.Element => {
                   <span> web apps</span>
                 </h2>
               </div>
-              <div className="text mt-5">
+              <div className="text mt-4">
                 <p>
                   {" "}
                   I'm <b> Emadisson Nirina Johannès Loick </b> and I'm 18 years
