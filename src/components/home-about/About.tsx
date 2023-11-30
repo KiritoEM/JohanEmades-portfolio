@@ -2,10 +2,10 @@ const About = (): JSX.Element => {
   return (
     <section id="home-about">
       <div id="home-about__container">
-        <div className="row gx-5">
+        <div className="row">
           <div className="col-5">
             <div className="section-cover">
-              <img src="/images/p1.jpg" alt="" />
+              <img src="/images/pdp.jpg" alt="" />
             </div>
           </div>
           <div className="col-6">
