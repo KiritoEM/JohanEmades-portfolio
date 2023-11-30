@@ -25,7 +25,7 @@ export default function dataHelper() {
   const overviewData = [
     { label: "Projects", statisitic: 15 },
     { label: "Repositories", statisitic: 21 },
-    { label: "Satisfied client", statisitic: 5 , id:"last-column"},
+    { label: "Contributions", statisitic: 5 , id:"last-column"},
   ];
 
   return { navItems, overviewData };
