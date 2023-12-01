@@ -40,11 +40,11 @@ export default function dataHelper() {
     { label: "Contact", icon: faEnvelope, id: "btn-contact" },
   ];
 
-    const overviewData = [
-      { label: "Projects", statisitic: 15 },
-      { label: "Repositories", statisitic: 21 },
-      { label: "Contributions", statisitic: 7, id: "last-column" },
-    ];
+  const overviewData = [
+    { label: "Projects", statistic: 15 },
+    { label: "Repositories", statistic: 21, id: "second-column" },
+    { label: "Contributions", statistic: 7, id: "last-column" },
+  ];
 
   const journeyData: IjourneyData[] = [
     {
@@ -85,7 +85,11 @@ export default function dataHelper() {
     },
   ];
 
-  const socialIcons = [{ icon: "/images/facebook .png" }, { icon: "/images/github.png" }, { icon: "/images/linkedin.png" }];
+  const socialIcons = [
+    { icon: "/images/facebook .png" },
+    { icon: "/images/github.png" },
+    { icon: "/images/linkedin.png" },
+  ];
 
   return { navItems, overviewData, journeyData, previewTechno, socialIcons };
 }

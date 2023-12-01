@@ -67,7 +67,7 @@
             </Fade>
 
             <Fade right>
-              <div className="col-md-3 col-lg-6">
+              <div className="d-none d-md-flex col-md-3 col-lg-6">
                 <div className="section-cover">
                   <img src="/images/MERN_couv.jpg" alt="" />
                 </div>

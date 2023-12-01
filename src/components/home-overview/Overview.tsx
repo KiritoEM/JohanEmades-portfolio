@@ -19,7 +19,7 @@ const Overview = (): JSX.Element => {
       const interval = setInterval(() => {
         setCounts((prevCounts) =>
           prevCounts.map((prevCount, index) =>
-            prevCount < overviewData[index].statisitic
+            prevCount < overviewData[index].statistic
               ? prevCount + 1
               : prevCount
           )
@@ -40,9 +40,9 @@ const Overview = (): JSX.Element => {
   return (
     <section id="home-overview">
       <div id="home-overview__container">
-        <div className="row" ref={ref}>
+        <div className="row gx-3 gy-4 gy-md-2" ref={ref}>
           {overviewData.map((item, index) => (
-            <div className="col-4" key={index}>
+            <div className="col-6 col-md-4" key={index}>
               <div className="overview-item" id={item.id}>
                 <h3>{counts[index]}</h3>
                 <h5>{item.label}</h5>

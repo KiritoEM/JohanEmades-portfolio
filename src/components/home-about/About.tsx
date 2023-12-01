@@ -7,13 +7,13 @@ const About = (): JSX.Element => {
     <section id="home-about">
       <div id="home-about__container">
         <Fade bottom cascade>
-          <div className="row">
-            <div className="col-5">
+          <div className="row gy-4 gy-md-2">
+            <div className="col-md-5">
               <div className="section-cover">
                 <img src="/images/pdp.jpg" alt="" />
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-md-7">
               <div className="section-header">
                 <div className="subtitle">
                   <div className="spinner"></div>

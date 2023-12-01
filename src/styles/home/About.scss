@@ -11,6 +11,10 @@
         padding-bottom: 3rem;
         @include container;
 
+        @include screen(small) {
+            padding-top: 1.5rem;
+          }
+
         .col-7 {
             margin: 0;
             padding: 0;
@@ -27,6 +31,10 @@
             overflow: hidden;
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             animation: oscillateImage 4s linear infinite;
+
+            @include screen(small) {
+                height: 24rem;
+            }
 
             @keyframes oscillateImage {
                 0% {

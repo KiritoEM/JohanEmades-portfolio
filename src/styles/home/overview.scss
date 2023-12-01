@@ -9,6 +9,11 @@
     padding-bottom: 6rem;
     @include container;
 
+    @include screen(small) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
     .row {
       width: 84%;
       margin: auto;
@@ -19,6 +24,15 @@
       padding-left: 8px;
       padding-right: 8px;
       border-radius: 8px;
+
+      @include screen(small) {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 8px;
+      }
 
       .overview-item {
         width: 100%;
@@ -41,6 +55,18 @@
 
     #last-column {
       border-right: 0;
+      width: 100%;
+
+      @include screen(small) {
+        margin-left: 50%;
+      }
+    }
+
+    #second-column {
+
+      @include screen(small) {
+        border-right: 0;
+      }
     }
   }
 }
