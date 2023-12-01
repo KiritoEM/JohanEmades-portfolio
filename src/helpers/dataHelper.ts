@@ -35,6 +35,11 @@ interface IStackIcon {
   icon: string;
 }
 
+interface IMERNIcon {
+  icon: string;
+  label :string
+}
+
 export default function dataHelper() {
   //données pour le menu items
   const navItems: ImenuItems[] = [
@@ -102,6 +107,14 @@ export default function dataHelper() {
     { icon: "/images/type-icon.svg" },
   ];
 
+  const MERNIcon : IMERNIcon[] = [
+    { icon: "/images/mongodb-icon.svg" , label:"M" },
+    { icon: "/images/express-icon.png"  , label:"E" },
+    { icon: "/images/react-icones.png"  , label:"R" },
+    { icon: "/images/node-icon.png"  , label:"N" },
+    { icon: "/images/next-icon.svg"   , label:"N" },
+  ]
+
   return {
     navItems,
     overviewData,
@@ -109,5 +122,6 @@ export default function dataHelper() {
     previewTechno,
     socialIcons,
     StackIcon,
+    MERNIcon
   };
 }

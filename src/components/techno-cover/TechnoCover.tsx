@@ -9,7 +9,7 @@ const TechnoCover = (): JSX.Element => {
           <img src="/images/rocket.svg" alt="" />
         </div>
         <div className="title">
-          <h2>My Stack</h2>
+          <h2>Powerful and modern Stack</h2>
         </div>
       </div>
       <div className="line"></div>
