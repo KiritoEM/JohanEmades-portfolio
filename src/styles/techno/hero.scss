@@ -57,12 +57,20 @@
             gap: 58px;
             width: 100%;
 
+            @include screen(small) {
+               gap: 24px;
+             }
+
             .box-langage {
                 .langage-name {
                     h3 {
                         color: #fff;
                         text-align: center;
                         font-weight: bold;
+                         
+                        @include screen(small) {
+                            font-size: 20px;
+                         }
                     }
                 }
 
@@ -74,6 +82,11 @@
                         background-color: $dark-grey;
                         border-radius: 7px;
                         object-fit: cover;
+
+                        @include screen(small) {
+                           width: 48px;
+                           padding: 12px;
+                        }
                     }
                 }
             }

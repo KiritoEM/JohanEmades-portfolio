@@ -16,13 +16,11 @@ const Tools = (): JSX.Element => {
           </div>
         </div>
         <div className="section-content">
-          <div className="row">
-            <div className="row gx-4 gy-5">
+            <div className="row gx-0 gx-md-4 gy-5">
               {toolData.map((item, index) => (
                 <BoxPreview icon={"function"} key={index} {...item} />
               ))}
             </div>
-          </div>
         </div>
       </div>
     </section>

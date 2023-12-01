@@ -30,9 +30,19 @@
         justify-content: center;
         gap: 30px;
 
+        @include screen(small) {
+            @include container;
+            gap: 18px;
+           }
+
         .rocket-svg {
             img {
                 width: 75px;
+
+                @include screen(small) {
+                    width: 47px;
+                }
+
             }
         }
 
@@ -46,21 +56,33 @@
                 font-size: 2.3em;
                 font-weight: bold;
 
+                @include screen(small) {
+                    font-size: 1.5em;
+                }
+
+                @include screen(medium) {
+                    font-size: 2.5em;
+                }
+
             }
         }
     }
 
-    .line{
+    .line {
         z-index: 15;
         position: relative;
         width: 37%;
         height: 5px;
         background-color: #fff;
-        margin:  auto;
+        margin: auto;
         margin-top: 2rem;
+
+        @include screen(small) {
+            width: 75%;
+        }
     }
 
-    .section-icons{
+    .section-icons {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -70,14 +92,24 @@
         gap: 30px;
         margin-top: 3rem;
 
-         .icon{
+        @include screen(small) {
+            @include container;
+            gap: 20px;
+           }
 
-             img{
+        .icon {
+
+            img {
                 width: 88px;
                 padding: 13px 22px 13px 22px;
                 background-color: $dark-grey;
                 border-radius: 7px;
-             }
-         }
+
+                @include screen(small) {
+                    padding: 12px 14px 12px 14px;
+                    width: 62px;
+                }
+            }
+        }
     }
 }
