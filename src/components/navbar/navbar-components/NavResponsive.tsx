@@ -1,10 +1,12 @@
 import dataHelper from "@/helpers/dataHelper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNav } from "@/hook/useNav";
 
 const NavResponsive = (): JSX.Element => {
   const { navItems, socialIcons } = dataHelper();
+  const { openMenu } = useNav();
   return (
-    <div className="menu-responsive d-lg-none">
+    <div className={`menu-responsive d-lg-none ${openMenu ? "open-menu" : "close-menu"}`}>
       <ul>
         {navItems.map((item, index) => (
           <li key={index} id={item.id}>
@@ -17,11 +19,11 @@ const NavResponsive = (): JSX.Element => {
         <li>
           <div className="line"></div>
           <div className="socialIcons">
-              {socialIcons.map((item, index)=>(
-                  <div className="icons" key={index}>
-                      <img src={item.icon} alt="" />
-                  </div>
-              ))}
+            {socialIcons.map((item, index) => (
+              <div className="icons" key={index}>
+                <img src={item.icon} alt="" />
+              </div>
+            ))}
           </div>
         </li>
       </ul>

@@ -83,10 +83,10 @@
             top: 4.5rem;
             padding: 0;
             margin: 0;
-            width: 100vw;
             height: 100vh;
             background-color: $black;
             z-index: 250;
+            overflow: hidden;
 
             ul {
                 position: relative;
@@ -146,17 +146,29 @@
             }
         }
 
-        #menu-button{
+        #menu-button {
             height: 100%;
             display: flex;
             align-items: center;
 
-             .icon{
+            .icon {
                 font-size: 21px;
                 color: $bg-color;
                 padding: 12px;
                 background-color: $yellow;
                 border: 5.5px solid #a87f0f;
                 border-radius: 50%;
-             }
+            }
+        }
+
+        .open-menu {
+            width: 100%;
+            transition: 0.25s ease-out;
+        }
+
+        .close-menu {
+            width: 0;
+            padding: 0;
+            margin: 0;
+            transition: 0.17s ease-in;
         }

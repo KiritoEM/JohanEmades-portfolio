@@ -1,8 +1,10 @@
 import MenuItems from "./navbar-components/MenuItems";
 import NavResponsive from "./navbar-components/NavResponsive";
 import MenuButton from "../childrenComponents/MenuButton";
+import { useNav } from "@/hook/useNav";
 
 const Navbar = (): JSX.Element => {
+  const { menuToogle } = useNav();
   return (
     <nav id="nav">
       <div id="nav__container">
@@ -16,9 +18,9 @@ const Navbar = (): JSX.Element => {
 
         {/* ===================menu items================ */}
         <MenuItems />
-        <MenuButton />
+        <MenuButton toogle={menuToogle} />
       </div>
-      <NavResponsive /> 
+      <NavResponsive />
     </nav>
   );
 };
