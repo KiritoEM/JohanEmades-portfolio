@@ -1,0 +1,37 @@
+#techno-hero {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5rem;
+
+    &__container {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include container;
+
+        .section-header {
+
+            .subtitle {
+                display: flex;
+                flex-direction: row;
+
+                h4 {
+                    color: $yellow;
+                    font-weight: bold;
+                    margin-left: 15px;
+                }
+
+                @include spin;
+            }
+
+            .title{
+                margin-top: 1rem;
+
+                h3{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

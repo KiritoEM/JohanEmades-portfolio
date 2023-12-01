@@ -31,8 +31,8 @@ interface IpreviewData {
   icon: IconProp;
 }
 
-interface IStackIcon{
-  icon: string
+interface IStackIcon {
+  icon: string;
 }
 
 export default function dataHelper() {
@@ -95,10 +95,19 @@ export default function dataHelper() {
     { icon: "/images/linkedin.png" },
   ];
 
-  const StackIcon : IStackIcon[] =[
-    {icon: "/images/react-icones.png"},
-    {icon: "/images/next-icon.svg"}
-  ]
+  const StackIcon: IStackIcon[] = [
+    { icon: "/images/react-icones.png" },
+    { icon: "/images/next-icon.svg" },
+    { icon: "/images/node-icon.png" },
+    { icon: "/images/type-icon.svg" },
+  ];
 
-  return { navItems, overviewData, journeyData, previewTechno, socialIcons };
+  return {
+    navItems,
+    overviewData,
+    journeyData,
+    previewTechno,
+    socialIcons,
+    StackIcon,
+  };
 }

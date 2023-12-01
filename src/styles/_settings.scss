@@ -34,7 +34,36 @@ $dark-grey: #292828;
     }
 }
 
-body{
+
+@keyframes oscillateImage {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        transform-origin: left top;
+    }
+
+    25% {
+        transform: translate(0, 0) rotate(8deg);
+        transform-origin: left top;
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(01deg);
+        transform-origin: left top;
+    }
+
+    75% {
+        transform: translate(0, 0) rotate(-2deg);
+        transform-origin: left top;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+        transform-origin: left top;
+    }
+}
+
+
+body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
