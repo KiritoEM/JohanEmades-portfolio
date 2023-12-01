@@ -123,12 +123,12 @@
                         gap: 30px;
 
 
-                          .icons{
-                             
-                             img{
+                        .icons {
+
+                            img {
                                 width: 42px;
-                             }
-                          }
+                            }
+                        }
                     }
                 }
 
@@ -138,10 +138,25 @@
                     align-items: center;
                     justify-content: center;
                     border: 2px solid $yellow;
-                    width: 57%;
+                    width: 180px;
                     border-radius: 10px;
                     height: 3rem;
                     background-color: rgb(32, 32, 32);
                 }
             }
+        }
+
+        #menu-button{
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+             .icon{
+                font-size: 21px;
+                color: $bg-color;
+                padding: 12px;
+                background-color: $yellow;
+                border: 5.5px solid #a87f0f;
+                border-radius: 50%;
+             }
         }

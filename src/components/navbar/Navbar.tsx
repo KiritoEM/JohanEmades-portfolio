@@ -1,5 +1,6 @@
 import MenuItems from "./navbar-components/MenuItems";
 import NavResponsive from "./navbar-components/NavResponsive";
+import MenuButton from "../childrenComponents/MenuButton";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -15,6 +16,7 @@ const Navbar = (): JSX.Element => {
 
         {/* ===================menu items================ */}
         <MenuItems />
+        <MenuButton />
       </div>
       <NavResponsive /> 
     </nav>

@@ -11,12 +11,6 @@ $dark-grey: #292828d3;
     list-style: none;
 }
 
-body {
-    background-color: $bg-color;
-    width: 100%;
-    // overflow: hidden;
-}
-
 @mixin spin {
 
 
@@ -44,6 +38,7 @@ body{
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: $bg-color;
 
 }
 
