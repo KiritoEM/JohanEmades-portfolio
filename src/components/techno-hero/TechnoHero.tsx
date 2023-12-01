@@ -1,9 +1,11 @@
 import dataHelper from "@/helpers/dataHelper";
+import Fade from "react-reveal/Fade";
 
 const TechnoHero = (): JSX.Element => {
   const { MERNIcon } = dataHelper();
   return (
     <section id="techno-hero">
+      <Fade bottom>
       <div id="techno-hero__container">
         <div className="section-header">
           <div className="subtitle">
@@ -46,6 +48,7 @@ const TechnoHero = (): JSX.Element => {
           ))}
         </div>
       </div>
+      </Fade>
     </section>
   );
 };

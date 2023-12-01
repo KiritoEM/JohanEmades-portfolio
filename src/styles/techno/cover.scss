@@ -33,7 +33,7 @@
         @include screen(small) {
             @include container;
             gap: 18px;
-           }
+        }
 
         .rocket-svg {
             img {
@@ -79,10 +79,11 @@
         height: 5px;
         background-color: #fff;
         margin: auto;
-        margin-top: 2rem;
+        margin-top: 1.6rem;
 
         @include screen(small) {
             width: 75%;
+            margin-top: 1.6rem;
         }
     }
 
@@ -99,7 +100,8 @@
         @include screen(small) {
             @include container;
             gap: 20px;
-           }
+            margin-top: 1.5rem;
+        }
 
         .icon {
 

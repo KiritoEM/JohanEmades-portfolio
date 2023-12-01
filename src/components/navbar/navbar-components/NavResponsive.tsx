@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 const NavResponsive = (): JSX.Element => {
   const { navItems, socialIcons } = dataHelper();
-  const { openMenu } = useNav();
+  const { openMenu , closeNav } = useNav();
   const router = useRouter();
   return (
     <div
@@ -21,6 +21,7 @@ const NavResponsive = (): JSX.Element => {
             className={router.pathname === item.url ? "active" : ""}
             onClick={() => {
               router.push(`${item.url}`);
+              closeNav();
             }}
           >
             {item.icon !== null && (
