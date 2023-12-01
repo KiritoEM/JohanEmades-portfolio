@@ -122,22 +122,58 @@ export default function dataHelper() {
   const toolData: ItoolData[] = [
     {
       img: "/images/tools/react.png",
-      title: "React js",
+      title: "React JS",
       text: "The ultimate and popular Javascript Framework for the frontend to build a powerful view",
       usage: "Frontend",
     },
     {
       img: "/images/tools/next.png",
-      title: "Next js",
+      title: "Next JS",
       text: "Next.js enables to create full-stack Web applications by extending the latest React features",
       usage: "Frontend",
     },
     {
       img: "/images/tools/node.png",
-      title: "Node js",
+      title: "Node JS",
       text: "Framework javascript for the serverside, for a flexible and powerful backend",
       usage: "Backend",
     },
+    {
+      img: "/images/tools/mongoDB.png",
+      title: "MongoDB",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Backend",
+    },
+    {
+      img: "/images/tools/ts.webp",
+      title: "Typescript JS",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Frontend",
+    },
+    {
+      img: "/images/tools/sass.png",
+      title: "SASS",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Frontend",
+    },
+    {
+      img: "/images/tools/express.jpg",
+      title: "Express JS",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Backend",
+    },
+    {
+      img: "/images/tools/css.jpeg",
+      title: "CSS",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Frontend",
+    },
+    {
+      img: "/images/tools/boostrap.jpg",
+      title: "Boostrap",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Frontend",
+    }
   ];
 
   return {

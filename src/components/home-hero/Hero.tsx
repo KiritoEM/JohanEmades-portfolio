@@ -9,7 +9,7 @@
   const Hero = (): JSX.Element => {
     const buttonHero: IbuttonHero[] = [
       { label: "Download my CV", id: "btn1" },
-      { label: "See my realisations", id: "btn2" },
+      { label: "See my projects", id: "btn2" },
     ];
 
     return (
