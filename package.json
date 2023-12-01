@@ -1,9 +1,9 @@
 {
-  "name": "kiritoem-portfolio",
+  "name": "johanemades-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "kiritoEM": "next dev",
+    "johanEmades": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

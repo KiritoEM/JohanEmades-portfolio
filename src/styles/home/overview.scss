@@ -6,7 +6,7 @@
   &__container {
     width: 100%;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
     @include container;
 
     @include screen(small) {

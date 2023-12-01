@@ -31,11 +31,15 @@ interface IpreviewData {
   icon: IconProp;
 }
 
+interface IStackIcon{
+  icon: string
+}
+
 export default function dataHelper() {
   //données pour le menu items
   const navItems: ImenuItems[] = [
-    { label: "Home", url: "", icon: faHome },
-    { label: "Technos", url: "", icon: faCode },
+    { label: "Home", url: "/", icon: faHome },
+    { label: "Technos", url: "/techno", icon: faCode },
     { label: "Projects", url: "", icon: faLaptop },
     { label: "Contact", icon: faEnvelope, id: "btn-contact" },
   ];
@@ -90,6 +94,11 @@ export default function dataHelper() {
     { icon: "/images/github.png" },
     { icon: "/images/linkedin.png" },
   ];
+
+  const StackIcon : IStackIcon[] =[
+    {icon: "/images/react-icones.png"},
+    {icon: "/images/next-icon.svg"}
+  ]
 
   return { navItems, overviewData, journeyData, previewTechno, socialIcons };
 }

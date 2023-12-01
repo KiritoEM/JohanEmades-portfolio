@@ -1,0 +1,61 @@
+#techno-cover {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(/images/MERN_couv.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0rem;
+        z-index: 5;
+        width: 100%;
+        height: 18rem;
+        background-color: rgba(0, 0, 0, 0.753);
+    }
+
+    .section-header {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .rocket-svg {
+            img {
+                width: 90px;
+            }
+        }
+
+        .title {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h2 {
+                color: #fff;
+                font-size: 3em;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .line{
+        z-index: 15;
+        position: relative;
+        width: 30%;
+        height: 5px;
+        background-color: #fff;
+        margin:  auto;
+        margin-top: 2rem;
+    }
+}

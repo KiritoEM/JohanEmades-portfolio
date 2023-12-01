@@ -1,78 +1,87 @@
-        #nav {
-            padding: 0;
-            margin: 0;
-            position: fixed;
-            top: 0;
-            z-index: 200;
-            width: 100%;
-            overflow: hidden;
-
-            &__container {
+            #nav {
+                padding: 0;
+                margin: 0;
                 position: fixed;
+                top: 0;
+                z-index: 200;
                 width: 100%;
                 overflow: hidden;
-                height: 5rem;
-                background-color: $black;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                box-shadow: 0 5px 7px rgb(12, 12, 12);
-                z-index: 500;
-                //include container to navbar
-                @include container;
 
-                //navbar logo
-                .logo {
-                    height: 100%;
+                &__container {
+                    position: fixed;
+                    width: 100%;
+                    overflow: hidden;
+                    height: 5rem;
+                    background-color: $black;
                     display: flex;
-                    align-items: center;
-                    padding: 0;
-                    margin: 0;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    box-shadow: 0 5px 7px rgb(12, 12, 12);
+                    z-index: 500;
+                    //include container to navbar
+                    @include container;
 
-                    img {
-                        width: 55px;
-                        object-fit: cover;
-                    }
-
-                    h4 {
-                        color: #fff;
-                        margin-top: 8px;
-                        font-weight: bold;
-                        margin-left: 0.5%;
-
-                        span {
-                            color: $yellow;
-                        }
-                    }
-                }
-
-                .menu-items {
-                    height: 100%;
-                    margin-right: 3%;
-
-                    ul {
+                    //navbar logo
+                    .logo {
+                        height: 100%;
                         display: flex;
                         align-items: center;
-                        height: 100%;
-                        gap: 24px;
+                        padding: 0;
+                        margin: 0;
 
-                        li {
-                            color: #fff;
-                            font-weight: bold;
-                            padding-top: 7px;
-                            padding-bottom: 7px;
+                        img {
+                            width: 55px;
+                            object-fit: cover;
                         }
 
-                        #btn-contact {
-                            position: relative;
-                            left: 4%;
-                            border: 2px solid $yellow;
-                            border-radius: 10px;
-                            padding-left: 25px;
-                            padding-right: 30px;
-                            background-color: rgb(32, 32, 32);
+                        h4 {
+                            color: #fff;
+                            margin-top: 8px;
+                            font-weight: bold;
+                            margin-left: 0.5%;
+
+                            span {
+                                color: $yellow;
+                            }
+                        }
+                    }
+
+                    .menu-items {
+                        height: 100%;
+                        margin-right: 3%;
+
+                        ul {
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+                            gap: 24px;
+
+                            li {
+                                color: #fff;
+                                font-weight: bold;
+                                padding-top: 7px;
+                                padding-bottom: 7px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: $yellow;
+                                }
+                            }
+
+                            .active {
+                                color: $yellow;
+                            }
+
+                            #btn-contact {
+                                position: relative;
+                                left: 4%;
+                                border: 2px solid $yellow;
+                                border-radius: 10px;
+                                padding-left: 25px;
+                                padding-right: 30px;
+                                background-color: rgb(32, 32, 32);
+                            }
                         }
                     }
                 }
             }
-        }
