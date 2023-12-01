@@ -36,12 +36,8 @@
         }
 
         .section-content{
-            margin-top: -3.5rem;
+            margin-top: 3rem;
 
-            @include screen(small) {
-                    margin-top: 3rem;
-              }
- 
         }
     }
 }

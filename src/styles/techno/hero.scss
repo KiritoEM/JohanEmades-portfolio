@@ -61,6 +61,11 @@
                gap: 24px;
              }
 
+             @include screen(medium) {
+                gap: 40px;
+              }
+ 
+
             .box-langage {
                 .langage-name {
                     h3 {
