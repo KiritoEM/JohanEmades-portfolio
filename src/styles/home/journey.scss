@@ -26,7 +26,6 @@
             }
 
             .title {
-
                 h3 {
                     color: #fff;
                     font-weight: bold;
@@ -40,15 +39,32 @@
 
         .journey-container {
 
+            @include screen(small) {
+                margin-top: 3rem;
+            }
+
             .journey-card {
                 width: 100%;
                 height: max-content;
                 margin-top: 2rem;
 
+                @include screen(small) {
+                    margin-top: -5px;
+                }
+
                 .first-section {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+
+
+                    @include screen(small) {
+                        position: relative;;
+                        left: 11%;
+                         width: 100%;
+                         align-items: normal;
+                         justify-content: center;
+                      }
 
                     .square {
                         position: relative;
@@ -73,17 +89,28 @@
                         height: 145%;
                         background-color: $yellow;
                         border-radius: 10px;
+
+                        @include screen(small) {
+                          height: 150%;
+                        }
                     }
                 }
 
                 .second-section {
+                    position: relative;
                     border-radius: 12px;
                     width: 85%;
                     margin-top: 2rem;
                     overflow: hidden;
+                    z-index: 15;
                     background-color: $dark-grey;
                     display: flex;
                     justify-content: center;
+
+                    @include screen(small) {
+                        width: 100%;
+                        margin-top: 3rem;
+                    }
 
                     .section-cover {
                         width: 100%;

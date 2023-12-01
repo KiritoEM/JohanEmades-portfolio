@@ -18,7 +18,7 @@ const JourneyCard: React.FC<IjourneyProps> = ({
   return (
     <div className="journey-card">
       <div className="row">
-        <div className="col-2 d-flex justify-content-center ">
+        <div className="col-md-2 d-flex justify-content-center ">
           <div className="first-section">
             <div className="line"></div>
             <div className="square">
@@ -26,7 +26,7 @@ const JourneyCard: React.FC<IjourneyProps> = ({
             </div>
           </div>
         </div>
-        <div className="col-10">
+        <div className="col-md-10">
           <div className="second-section">
             <div className="row">
               <div className="col-5">
