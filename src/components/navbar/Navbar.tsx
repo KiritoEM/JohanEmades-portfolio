@@ -1,4 +1,5 @@
 import MenuItems from "./navbar-components/MenuItems";
+import NavResponsive from "./navbar-components/NavResponsive";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -15,6 +16,7 @@ const Navbar = (): JSX.Element => {
         {/* ===================menu items================ */}
         <MenuItems />
       </div>
+      <NavResponsive /> 
     </nav>
   );
 };

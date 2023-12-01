@@ -4,11 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const MenuItems = (): JSX.Element => {
   const { navItems } = dataHelper();
   return (
-    <div className="menu-items">
+    <div className="menu-items d-none d-lg-flex">
       <ul>
         {navItems.map((item, index) => (
           <li key={index} id={item.id}>
-            <FontAwesomeIcon icon={item.icon} className="mx-2" />
+            {item.icon !== null && (
+              <FontAwesomeIcon icon={item.icon} className="mx-2" />
+            )}
             {item.label}
           </li>
         ))}

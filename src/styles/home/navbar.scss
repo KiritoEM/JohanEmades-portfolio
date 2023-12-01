@@ -4,16 +4,20 @@
             position: fixed;
             top: 0;
             z-index: 200;
+            width: 100%;
+            overflow: hidden;
 
             &__container {
                 position: fixed;
                 width: 100%;
+                overflow: hidden;
                 height: 5rem;
                 background-color: $black;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 box-shadow: 0 5px 7px rgb(12, 12, 12);
+                z-index: 500;
                 //include container to navbar
                 @include container;
 
@@ -69,6 +73,75 @@
                             background-color: rgb(32, 32, 32);
                         }
                     }
+                }
+            }
+        }
+
+        /* Responsive menu*/
+        .menu-responsive {
+            position: fixed;
+            top: 4.5rem;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: $black;
+            z-index: 250;
+
+            ul {
+                position: relative;
+                top: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                height: 100%;
+                width: 100;
+
+                li {
+                    color: #fff;
+                    font-weight: bold;
+                    margin-top: 2.7rem;
+                    font-size: 19px;
+                    width: 100%;
+
+                    .line {
+                        margin-top: 1rem;
+                        width: 90%;
+                        height: 3px;
+                        border-radius: 15px;
+                        background-color: $yellow;
+                    }
+
+                    .socialIcons {
+                        position: relative;
+                        top: 1.6rem;
+                        left: -5%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 100%;
+                        gap: 30px;
+
+
+                          .icons{
+                             
+                             img{
+                                width: 42px;
+                             }
+                          }
+                    }
+                }
+
+
+                #btn-contact {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid $yellow;
+                    width: 57%;
+                    border-radius: 10px;
+                    height: 3rem;
+                    background-color: rgb(32, 32, 32);
                 }
             }
         }

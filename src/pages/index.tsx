@@ -22,10 +22,6 @@ const homePage = (): JSX.Element => {
           <Journey />
           <TechnoPreview />
         </main>
-
-        <footer>
-          <Footer />
-        </footer>
       </section>
     </Layout>
   );

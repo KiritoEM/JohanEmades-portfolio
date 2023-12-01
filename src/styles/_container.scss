@@ -1,4 +1,12 @@
 @mixin container {
     padding-left: 6%;
     padding-right: 6%;
+    width: 100vw;
+    overflow: hidden;
+
+
+    @include screen(small) {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
