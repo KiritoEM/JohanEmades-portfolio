@@ -8,8 +8,8 @@ const Footer = (): JSX.Element => {
   return (
     <section id="footer">
       <div id="footer__container">
-        <div className="row">
-          <div className="col-6">
+        <div className="row gy-5 gy-md-2 gx-5 gx-lg-2">
+          <div className="col-md-6 col-lg-8">
             <div className="title">
               <h3>
                 <FontAwesomeIcon icon={faUser} className="mx-2" /> Contact-me

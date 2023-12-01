@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterForm = (): JSX.Element => {
   return (
-    <div className="col-6">
+    <div className="col-md-6 col-lg-4">
       <div className="title">
         <h3>
           <FontAwesomeIcon icon={faEnvelope} className="mx-2" /> Send Email

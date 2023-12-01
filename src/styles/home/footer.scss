@@ -9,7 +9,8 @@
         width: 100%;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        @include container;
+        padding-left: 8%;
+        padding-right: 8%;
 
 
         .section-info {
@@ -19,12 +20,22 @@
             padding: 18px;
             display: flex;
             flex-direction: row;
+            justify-content: flex-start;
             gap: 30px;
+
+            @include screen(small) {
+                justify-content: center;
+            }
 
             .social-icons {
                 padding: 14px 30px 14px 30px;
                 border-radius: 5px;
                 background-color: $dark-grey;
+
+                @include screen(medium) {
+                    padding: 14px 24px 14px 24px;
+                    margin-left: -4%;
+                }
 
                 img {
                     width: 26px;
@@ -37,7 +48,7 @@
 
 
             input {
-                width: 73%;
+                width: 100%;
                 height: 3rem;
                 border-radius: 9px;
                 background-color: #d4d1d1;
@@ -47,7 +58,7 @@
                 margin: 0 auto;
 
                 button {
-                    width: 73%;
+                    width: 100%;
                     height: 3rem;
                     font-size: 17px;
                     color: #fff;
@@ -71,7 +82,7 @@
 }
 
 .line {
-    width: 47%;
+    width: 150px;
     border-radius: 8px;
     height: 4px;
     background-color: $yellow;
