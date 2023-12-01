@@ -1,4 +1,8 @@
+import dataHelper from "@/helpers/dataHelper";
+import BoxPreview from "../childrenComponents/BoxPreview";
+
 const Tools = (): JSX.Element => {
+  const { toolData } = dataHelper();
   return (
     <section id="techno-tools">
       <div id="techno-tools__container">
@@ -13,7 +17,11 @@ const Tools = (): JSX.Element => {
         </div>
         <div className="section-content mt-5">
           <div className="row">
-            <div className="row gx-4 gy-4 gy-lg-2"></div>
+            <div className="row gx-4 gy-4 gy-lg-2">
+              {toolData.map((item, index) => (
+                <BoxPreview icon={"function"} key={index} {...item} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

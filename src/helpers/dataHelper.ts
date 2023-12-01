@@ -28,7 +28,7 @@ interface IpreviewData {
   title: string;
   text: string;
   usage: string;
-  icon: IconProp;
+  // icon: IconProp;
 }
 
 interface IStackIcon {
@@ -37,7 +37,14 @@ interface IStackIcon {
 
 interface IMERNIcon {
   icon: string;
-  label :string
+  label: string;
+}
+
+interface ItoolData {
+  img: string;
+  title: string;
+  text: string;
+  usage: string;
 }
 
 export default function dataHelper() {
@@ -76,21 +83,18 @@ export default function dataHelper() {
       title: "React js",
       text: "The ultimate and popular Javascript Framework for the frontend to build a powerful view",
       usage: "Frontend",
-      icon: faLaptop,
     },
     {
       img: "/images/next.jpg",
       title: "Next js",
       text: "Next.js enables to create full-stack Web applications by extending the latest React features",
       usage: "Frontend",
-      icon: faLaptop,
     },
     {
       img: "/images/node.jpg",
       title: "Node js",
       text: "Framework javascript for the serverside, for a flexible and powerful backend",
       usage: "Backend",
-      icon: faDatabase,
     },
   ];
 
@@ -107,13 +111,34 @@ export default function dataHelper() {
     { icon: "/images/type-icon.svg" },
   ];
 
-  const MERNIcon : IMERNIcon[] = [
-    { icon: "/images/mongodb-icon.svg" , label:"M" },
-    { icon: "/images/express-icon.png"  , label:"E" },
-    { icon: "/images/react-icones.png"  , label:"R" },
-    { icon: "/images/node-icon.png"  , label:"N" },
-    { icon: "/images/next-icon.svg"   , label:"N" },
-  ]
+  const MERNIcon: IMERNIcon[] = [
+    { icon: "/images/mongodb-icon.svg", label: "M" },
+    { icon: "/images/express-icon.png", label: "E" },
+    { icon: "/images/react-icones.png", label: "R" },
+    { icon: "/images/node-icon.png", label: "N" },
+    { icon: "/images/next-icon.svg", label: "N" },
+  ];
+
+  const toolData: ItoolData[] = [
+    {
+      img: "/images/tools/react.png",
+      title: "React js",
+      text: "The ultimate and popular Javascript Framework for the frontend to build a powerful view",
+      usage: "Frontend",
+    },
+    {
+      img: "/images/tools/next.png",
+      title: "Next js",
+      text: "Next.js enables to create full-stack Web applications by extending the latest React features",
+      usage: "Frontend",
+    },
+    {
+      img: "/images/tools/node.png",
+      title: "Node js",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      usage: "Backend",
+    },
+  ];
 
   return {
     navItems,
@@ -122,6 +147,7 @@ export default function dataHelper() {
     previewTechno,
     socialIcons,
     StackIcon,
-    MERNIcon
+    MERNIcon,
+    toolData
   };
 }

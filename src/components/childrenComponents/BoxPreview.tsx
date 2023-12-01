@@ -1,5 +1,5 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faCog, faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faCog, faDatabase, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface IpreviewProps {
@@ -31,7 +31,11 @@ const BoxPreview: React.FC<IpreviewProps> = ({
             <div className="usage">
               <h5>
                 {" "}
-                <FontAwesomeIcon icon={icon} className="mx-2" />
+                {usage === "Frontend" ? (
+                  <FontAwesomeIcon icon={faLaptop} className="mx-2" />
+                ) : (
+                  <FontAwesomeIcon icon={faDatabase} className="mx-2" />
+                )}
                 {usage}
               </h5>
             </div>
