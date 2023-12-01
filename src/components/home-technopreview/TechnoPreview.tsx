@@ -23,14 +23,16 @@ const TechnoPreview = (): JSX.Element => {
           <div className="section-content mt-5">
             <div className="row gx-4 gy-4 gy-lg-2">
               {previewTechno.map((item, index) => (
-                <BoxPreview key={index} {...item} />
+                <BoxPreview icon={"function"} key={index} {...item} />
               ))}
             </div>
             <div className="btn-all">
-              <button className="btn">
-                <FontAwesomeIcon icon={faCode} className="mx-2" /> See all my
-                techno
-              </button>
+              <a href="/techno">
+                <button className="btn">
+                  <FontAwesomeIcon icon={faCode} className="mx-2" /> See all my
+                  techno
+                </button>
+              </a>
             </div>
           </div>
         </Fade>
