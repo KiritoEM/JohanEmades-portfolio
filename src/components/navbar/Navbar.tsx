@@ -21,6 +21,7 @@ const Navbar = (): JSX.Element => {
         <MenuItems />
         <MenuButton toogle={menuToogle} />
       </div>
+      
       <Overlay overlay={openOverlay} />
       <NavResponsive />
     </nav>

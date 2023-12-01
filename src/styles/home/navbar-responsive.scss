@@ -1,0 +1,109 @@
+    /* Responsive menu*/
+    .menu-responsive {
+        position: fixed;
+        top: 4.5rem;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        background-color: $black;
+        z-index: 250;
+        overflow: hidden;
+
+        ul {
+            position: relative;
+            top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            height: 100%;
+            width: 100;
+
+            li {
+                color: #fff;
+                font-weight: bold;
+                margin-top: 2.7rem;
+                font-size: 19px;
+                width: 100%;
+
+                .line {
+                    margin-top: 1rem;
+                    width: 90%;
+                    height: 3px;
+                    border-radius: 15px;
+                    background-color: $yellow;
+                }
+
+                .socialIcons {
+                    position: relative;
+                    top: 1.6rem;
+                    left: -5%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 30px;
+
+
+                    .icons {
+
+                        img {
+                            width: 42px;
+                        }
+                    }
+                }
+            }
+
+
+            #btn-contact {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $yellow;
+                width: 180px;
+                border-radius: 10px;
+                height: 3rem;
+                background-color: rgb(32, 32, 32);
+            }
+        }
+    }
+
+    #menu-button {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            font-size: 21px;
+            color: $bg-color;
+            padding: 12px;
+            background-color: $yellow;
+            border: 5.5px solid #a87f0f;
+            border-radius: 50%;
+        }
+    }
+
+    .open-menu {
+        width: 100%;
+        transition: 0.25s ease-out;
+
+        @include screen(medium) {
+            width: 52%;
+        }
+    }
+
+    .close-menu {
+        width: 0;
+        padding: 0;
+        margin: 0;
+        transition: 0.17s ease-in;
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 100;
+        height: 100vh;
+        background-color: #020202d2;
+    }

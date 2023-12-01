@@ -4,11 +4,37 @@
     height: 90vh;
     margin-top: 5rem;
 
+
+    &::before {
+        content: "";
+        position: absolute;
+        margin-top: 5rem;
+        width: 100vw;
+        height: 90vh;
+        top: 0;
+        left: 0;
+
+        @include screen(small) {
+            background-color: rgba(0, 0, 0, 0.77);
+        }
+    }
+
+    @include screen(small) {
+        background-image: url(/images/MERN_couv.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
     &__container {
         width: 100%;
+        z-index: 15;
         height: 100%;
         padding-left: 6%;
         padding-right: 0%;
+
+        @include screen(small) {
+            @include container;
+        }
 
 
         .section-header {
@@ -28,6 +54,10 @@
                     span {
                         color: $yellow;
                     }
+
+                    @include screen(small) {
+                        font-size: 2.27em;
+                    }
                 }
             }
 
@@ -35,6 +65,10 @@
 
                 h3 {
                     color: $yellow;
+
+                    @include screen(small) {
+                        font-size: 24.5px;
+                    }
                 }
             }
 
@@ -54,11 +88,13 @@
                 .btn {
                     width: 100%;
                     font-size: 16px;
-                    padding-left: 38px;
-                    padding-right: 38px;
                     border-radius: 10px;
-                    padding-top: 12px;
-                    padding-bottom: 12px;
+                    padding: 12px 38px 12px 38px;
+
+                    @include screen(small) {
+                        font-size: 14px;
+                        padding: 11px 18px 11px 18px;
+                    }
                 }
 
                 #btn1 {
@@ -72,9 +108,9 @@
                     color: #fff;
                     font-weight: bold;
 
-                     &:hover{
+                    &:hover {
                         background-color: $yellow;
-                     }
+                    }
                 }
             }
         }
