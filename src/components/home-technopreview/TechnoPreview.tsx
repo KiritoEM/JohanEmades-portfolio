@@ -21,7 +21,7 @@ const TechnoPreview = (): JSX.Element => {
           </div>
 
           <div className="section-content mt-5">
-            <div className="row gx-4 gy-5 gy-lg-2">
+            <div className="row gx-4 gy-4 gy-lg-2">
               {previewTechno.map((item, index) => (
                 <BoxPreview key={index} {...item} />
               ))}

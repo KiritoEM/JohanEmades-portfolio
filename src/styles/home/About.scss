@@ -36,6 +36,11 @@
                 height: 24rem;
             }
 
+
+            @include screen(medium) {
+                height: 23rem;
+            }
+
             @keyframes oscillateImage {
                 0% {
                     transform: translate(0, 0) rotate(0deg);
@@ -75,6 +80,10 @@
             width: 100%;
             padding-top: 3rem;
 
+            @include screen(medium) {
+               margin-top: -5rem;
+           }
+
             .subtitle {
                 display: flex;
                 flex-direction: row;
@@ -97,6 +106,10 @@
                     span {
                         color: $yellow;
                     }
+
+                    @include screen(medium) {
+                        font-size: 24px;
+                    }
                 }
             }
 
@@ -105,6 +118,10 @@
                 p {
                     color: #fff;
                     font-size: 18px;
+
+                    @include screen(medium) {
+                         font-size: 16.7px;
+                    }
                 }
             }
 
