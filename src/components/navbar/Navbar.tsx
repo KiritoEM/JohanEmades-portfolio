@@ -2,9 +2,10 @@ import MenuItems from "./navbar-components/MenuItems";
 import NavResponsive from "./navbar-components/NavResponsive";
 import MenuButton from "../childrenComponents/MenuButton";
 import { useNav } from "@/hook/useNav";
+import Overlay from "./navbar-components/Overlay";
 
 const Navbar = (): JSX.Element => {
-  const { menuToogle } = useNav();
+  const { menuToogle, openOverlay } = useNav();
   return (
     <nav id="nav">
       <div id="nav__container">
@@ -20,6 +21,7 @@ const Navbar = (): JSX.Element => {
         <MenuItems />
         <MenuButton toogle={menuToogle} />
       </div>
+      <Overlay overlay={openOverlay} />
       <NavResponsive />
     </nav>
   );
