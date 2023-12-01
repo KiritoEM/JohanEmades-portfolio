@@ -6,7 +6,6 @@ const Tools = (): JSX.Element => {
   const { toolData } = dataHelper();
   return (
     <section id="techno-tools">
-      <Flip bottom>
         <div id="techno-tools__container">
           <div className="section-header">
             <div className="subtitle">
@@ -25,7 +24,6 @@ const Tools = (): JSX.Element => {
             </div>
           </div>
         </div>
-      </Flip>
     </section>
   );
 };
