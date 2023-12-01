@@ -29,12 +29,12 @@ const JourneyCard: React.FC<IjourneyProps> = ({
         <div className="col-md-10">
           <div className="second-section">
             <div className="row">
-              <div className="col-5">
+              <div className="col-md-5">
                 <div className="section-cover">
                   <img src={img} alt="" />
                 </div>
               </div>
-              <div className="col-7">
+              <div className="col-md-7">
                 <div className="section-header">
                   <div className="title">
                     <h5>{title}</h5>

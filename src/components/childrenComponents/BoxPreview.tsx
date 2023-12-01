@@ -18,7 +18,7 @@ const BoxPreview: React.FC<IpreviewProps> = ({
   text,
 }): JSX.Element => {
   return (
-    <div className="col-4">
+    <div className="col-md-4">
       <div className="box-preview">
         <div className="box-preview__cover">
           <img src={img} alt="" />

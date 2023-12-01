@@ -11,6 +11,11 @@
         padding-bottom: 3rem;
         @include container;
 
+        @include screen(small) {
+            padding-top: 1.5rem;
+            padding-bottom: 3rem;
+          }
+
         .section-header {
             .subtitle {
                 display: flex;

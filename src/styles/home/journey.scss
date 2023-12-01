@@ -8,6 +8,11 @@
         padding-bottom: 5rem;
         @include container;
 
+        @include screen(small) {
+            padding-top: 1.5rem;
+            padding-bottom: 3rem;
+          }
+
         .header {
             text-align: center;
 
@@ -117,6 +122,11 @@
                         overflow: hidden;
                         box-shadow: 5.5px 3px 10px rgba(31, 30, 30, 0.623);
                         height: 100%;
+
+
+                        @include screen(small) {
+                           height: 13.6rem;
+                          }
 
                         img {
                             object-fit: cover;
