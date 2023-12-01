@@ -17,7 +17,7 @@
         <div id="home-hero__container">
           <div className="row gx-4">
             <Fade left>
-              <div className="col-md-6">
+              <div className="col-md-9 col-lg-6">
                 <div className="section-header">
                   <div className="title">
                     <h1>
@@ -67,7 +67,7 @@
             </Fade>
 
             <Fade right>
-              <div className="col-md-6">
+              <div className="col-md-3 col-lg-6">
                 <div className="section-cover">
                   <img src="/images/MERN_couv.jpg" alt="" />
                 </div>

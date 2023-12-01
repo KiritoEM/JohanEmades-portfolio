@@ -4,7 +4,6 @@
     height: 90vh;
     margin-top: 5rem;
 
-
     &::before {
         content: "";
         position: absolute;
@@ -23,6 +22,10 @@
         background-image: url(/images/MERN_couv.jpg);
         background-size: cover;
         background-position: center center;
+    }
+
+    @include screen(medium) {
+        height: 100vh;
     }
 
     &__container {
@@ -45,6 +48,12 @@
             justify-content: center;
             margin: 0;
 
+            @include screen(medium) {
+                height: 100vh;
+                position: relative;
+                top : -5vh;
+            }
+
             .title {
                 h1 {
                     color: #fff;
@@ -58,6 +67,10 @@
                     @include screen(small) {
                         font-size: 2.27em;
                     }
+
+                    @include screen(medium) {
+                        font-size: 2.5em;
+                    }
                 }
             }
 
@@ -68,6 +81,10 @@
 
                     @include screen(small) {
                         font-size: 24.5px;
+                    }
+
+                    @include screen(medium) {
+                        font-size: 26px;
                     }
                 }
             }
