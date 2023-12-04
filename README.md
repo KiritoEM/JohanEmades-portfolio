@@ -1,4 +1,8 @@
+## My Portfolio made with the Next js, React js and typescript js language. I used Sass for the style sheet by adding Boostrap version 5 to improve the responsiveness of my App. Then node js, for sending emails
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
 
 ## Getting Started
 
