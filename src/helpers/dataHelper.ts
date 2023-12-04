@@ -196,7 +196,7 @@ export default function dataHelper() {
       img: "/images/tools/js.svg",
       title: "Vanilla Javascript",
       text: `Vanilla" JavaScript allows a lightweight approach, without external dependencies, providing direct control over the code `,
-      usage: "Backend",
+      usage: "Frontend",
     },
     {
       img: "/images/tools/json.png",
