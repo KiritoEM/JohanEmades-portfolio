@@ -5,17 +5,17 @@
     border-radius: 9px;
     background-color: $dark-grey;
 
-     @include screen-x(1000px , 1056px){
+    @include screen-x(1000px, 1056px) {
         height: 35rem;
-     }
+    }
 
-     @include screen(small){
+    @include screen(small) {
         height: max-content;
-     }
+    }
 
-     @include screen(medium){
+    @include screen(medium) {
         height: 34.6rem;
-     }
+    }
 
     &__cover {
         width: 100%;
@@ -46,14 +46,19 @@
                     color: #fff;
                     font-weight: bold;
 
-                    @include screen-x(1000px , 1056px){
+                    @include screen-x(1000px, 1056px) {
                         font-size: 18px;
-                     }
+                    }
+
+                    @include screen-x(280px, 330px) {
+                        font-size: 17px;
+                    }
                 }
             }
 
             .usage {
                 white-space: nowrap;
+
                 h5 {
                     color: $bg-color;
                     font-size: 16px;
@@ -61,10 +66,15 @@
                     border-radius: 21px;
                     background-color: $yellow;
 
-                    @include screen-x(1000px , 1056px){
+                    @include screen-x(1000px, 1056px) {
                         font-size: 15px;
                         padding: 9px 12px 9px 12px;
-                     }
+                    }
+
+                    @include screen-x(280px, 340px) {
+                        font-size: 15px;
+                        padding: 9px 12px 9px 12px;
+                    }
                 }
             }
         }

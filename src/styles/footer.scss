@@ -43,6 +43,11 @@
                     margin-left: -4%;
                 }
 
+                @include screen-x(280px, 335px) {
+                    padding: 12px 20px 12px 20px;
+                    margin-left: -4%;
+                }
+
                 img {
                     width: 26px;
                 }
