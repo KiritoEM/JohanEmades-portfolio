@@ -9,7 +9,7 @@ const TechnoPreview = (): JSX.Element => {
   return (
     <section id="home-preview">
       <div id="home-preview__container">
-        <Fade bottom cascade>
+        <Fade bottom>
           <div className="section-header">
             <div className="subtitle">
               <div className="spinner"></div>
@@ -19,7 +19,9 @@ const TechnoPreview = (): JSX.Element => {
               <h3>The langage I use mostly</h3>
             </div>
           </div>
+        </Fade>
 
+        <Fade bottom>
           <div className="section-content mt-5">
             <div className="row gx-5 gy-5 gy-lg-2">
               {previewTechno.map((item, index) => (

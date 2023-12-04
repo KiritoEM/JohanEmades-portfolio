@@ -6,16 +6,13 @@ const About = (): JSX.Element => {
   return (
     <section id="home-about">
       <div id="home-about__container">
-        <div className="row gy-4 gy-md-2">
-          <Fade bottom cascade>
+        <Fade bottom cascade>
+          <div className="row gy-4 gy-md-2">
             <div className="col-md-5">
               <div className="section-cover">
                 <img src="/images/pdp.jpg" alt="" />
               </div>
             </div>
-          </Fade>
-
-          <Fade bottom cascade>
             <div className="col-md-7">
               <div className="section-header">
                 <div className="subtitle">
@@ -49,8 +46,8 @@ const About = (): JSX.Element => {
                 </div>
               </div>
             </div>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
       </div>
     </section>
   );
