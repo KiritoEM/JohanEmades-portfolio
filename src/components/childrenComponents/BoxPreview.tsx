@@ -26,7 +26,7 @@ const BoxPreview: React.FC<IpreviewProps> = ({
         <div className="box-preview__content">
           <div className="header">
             <div className="title">
-              <h4>{title}</h4>
+              <h5>{title}</h5>
             </div>
             <div className="usage">
               <h5>

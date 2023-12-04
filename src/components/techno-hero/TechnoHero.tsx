@@ -20,11 +20,7 @@ const TechnoHero = (): JSX.Element => {
           <div className="text mt-4">
             <p>
               The combination of{" "}
-              <b>
-                <span>
-                  MERN (MongoDB, Express.js, React.js, Node.js) with Next.js
-                </span>
-              </b>{" "}
+              <b>MERN (MongoDB, Express.js, React.js, Node.js) with Next.js</b>{" "}
               offers smooth integration between the server and client side, a
               flexible database with MongoDB, optimized responsiveness thanks to
               React.js, and enhanced server-side rendering (SSR) with Next.js.
@@ -33,18 +29,6 @@ const TechnoHero = (): JSX.Element => {
               responsive, scalable, and optimized web applications.
             </p>
           </div>
-        </div>
-        <div className="section-langage">
-          {MERNIcon.map((item, index) => (
-            <div className="box-langage" key={index}>
-              <div className="langage-name">
-                <h3>{item.label}</h3>
-              </div>
-              <div className="langage-svg">
-                <img src={item.icon} alt="" />
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

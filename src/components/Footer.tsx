@@ -11,9 +11,9 @@ const Footer = (): JSX.Element => {
           <div className="row gy-5 gy-md-2 gx-5 gx-lg-2">
             <div className="col-md-6 col-lg-8">
               <div className="title">
-                <h3>
+                <h4>
                   <FontAwesomeIcon icon={faUser} className="mx-2" /> Contact-me
-                </h3>
+                </h4>
                 <div className="line"></div>
               </div>
               <div className="section-info">

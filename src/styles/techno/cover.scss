@@ -6,8 +6,8 @@
     background-image: url(/images/MERN_couv.jpg);
     background-size: cover;
     background-position: center center;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
     &::before {
         content: "";
@@ -37,7 +37,7 @@
 
         .rocket-svg {
             img {
-                width: 75px;
+                width: 65px;
 
                 @include screen(small) {
                     width: 47px;
@@ -57,7 +57,7 @@
 
             h2 {
                 color: #fff;
-                font-size: 2.3em;
+                font-size: 2em;
                 font-weight: bold;
 
                 @include screen(small) {
@@ -76,7 +76,7 @@
         z-index: 15;
         position: relative;
         width: 37%;
-        height: 5px;
+        height: 3px;
         background-color: #fff;
         margin: auto;
         margin-top: 1.6rem;
@@ -95,7 +95,7 @@
         justify-content: center;
         z-index: 15;
         gap: 30px;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         @include screen(small) {
             @include container;
@@ -106,8 +106,8 @@
         .icon {
 
             img {
-                width: 88px;
-                padding: 13px 22px 13px 22px;
+                width: 78px;
+                padding: 13px 21px 13px 21px;
                 background-color: $dark-grey;
                 border-radius: 7px;
 

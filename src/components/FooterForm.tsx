@@ -5,9 +5,9 @@ const FooterForm = (): JSX.Element => {
   return (
     <div className="col-md-6 col-lg-4">
       <div className="title">
-        <h3>
+        <h4>
           <FontAwesomeIcon icon={faEnvelope} className="mx-2" /> Send Email
-        </h3>
+        </h4>
         <div className="line"></div>
       </div>
       <div className="section-email">
