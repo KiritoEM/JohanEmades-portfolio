@@ -40,7 +40,7 @@ const Overview = (): JSX.Element => {
   return (
     <section id="home-overview">
       <div id="home-overview__container">
-        <div className="row gx-3 gy-4 gy-md-2" ref={ref}>
+        <div className="row gx-0 gy-4 gy-md-2" ref={ref}>
           {overviewData.map((item, index) => (
             <div className="col-6 col-md-4" key={index}>
               <div className="overview-item" id={item.id}>
