@@ -1,8 +1,9 @@
 @import "./settings";
 @import "./container";
+@import "./footer.scss";
+@import "./navbar.scss";
 
 /* ===================home styles=============== */
-@import "./home/navbar.scss";
 @import "./home/navbar-responsive.scss";
 @import "./home/hero.scss";
 @import "./home/overview.scss";
@@ -10,7 +11,7 @@
 @import "./home/journey.scss";
 @import "./home/technopreview.scss";
 @import "./home/box-preview.scss";
-@import "./home/footer.scss";
+
 
 
 @import "./techno/cover.scss";
