@@ -1,8 +1,4 @@
-import dataHelper from "@/helpers/dataHelper";
-import Fade from "react-reveal/Fade";
-
 const TechnoHero = (): JSX.Element => {
-  const { MERNIcon } = dataHelper();
   return (
     <section id="techno-hero">
       <div id="techno-hero__container">

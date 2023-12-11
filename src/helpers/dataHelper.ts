@@ -52,7 +52,7 @@ export default function dataHelper() {
   const navItems: ImenuItems[] = [
     { label: "Home", url: "/", icon: faHome },
     { label: "Technos", url: "/techno", icon: faCode },
-    { label: "Projects", url: "", icon: faLaptop },
+    { label: "Projects", url: "/projects", icon: faLaptop },
     { label: "Contact", icon: faEnvelope, id: "btn-contact" },
   ];
 
@@ -93,7 +93,7 @@ export default function dataHelper() {
     {
       img: "/images/node.jpg",
       title: "Node js",
-      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend able to easy connect to Database",
       usage: "Backend",
     },
   ];
@@ -111,13 +111,6 @@ export default function dataHelper() {
     { icon: "/images/type-icon.svg" },
   ];
 
-  const MERNIcon: IMERNIcon[] = [
-    { icon: "/images/mongodb-icon.svg", label: "M" },
-    { icon: "/images/express-icon.png", label: "E" },
-    { icon: "/images/react-icones.png", label: "R" },
-    { icon: "/images/node-icon.png", label: "N" },
-    { icon: "/images/next-icon.svg", label: "N" },
-  ];
 
   const toolData: ItoolData[] = [
     {
@@ -194,7 +187,7 @@ export default function dataHelper() {
     },
     {
       img: "/images/tools/js.svg",
-      title: "Vanilla Javascript",
+      title: "Vanilla Js",
       text: `Vanilla" JavaScript allows a lightweight approach, without external dependencies, providing direct control over the code `,
       usage: "Frontend",
     },
@@ -213,7 +206,6 @@ export default function dataHelper() {
     previewTechno,
     socialIcons,
     StackIcon,
-    MERNIcon,
     toolData,
   };
 }
