@@ -97,3 +97,18 @@ body {
         @content;
     }
 }
+
+@mixin rotationanimation {
+
+    animation: rotation 3s linear infinite;
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

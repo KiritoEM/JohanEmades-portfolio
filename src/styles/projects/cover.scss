@@ -1,0 +1,77 @@
+#projects-cover {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(/images/MERN_couv.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0rem;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .section-header {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+
+        @include screen(small) {
+            @include container;
+            gap: 18px;
+        }
+
+        .react-img {
+            img {
+                object-fit: cover;
+                width: 76px;
+                @include rotationanimation;
+
+                @include screen(small) {
+                    width: 49px;
+                }
+
+                @include screen(medium) {
+                    width: 62px;
+                }
+            }
+        }
+
+        .title {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h2 {
+                color: #fff;
+                font-size: 2em;
+                font-weight: bold;
+
+                @include screen(small) {
+                    font-size: 1.5em;
+                }
+
+                @include screen(medium) {
+                    font-size: 2em;
+                }
+
+            }
+        }
+    }
+
+
+}
