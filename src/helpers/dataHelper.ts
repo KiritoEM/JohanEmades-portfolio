@@ -230,5 +230,6 @@ export default function dataHelper() {
     socialIcons,
     StackIcon,
     toolData,
+    projectsData
   };
 }

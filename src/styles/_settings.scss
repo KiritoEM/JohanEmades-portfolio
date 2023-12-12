@@ -68,7 +68,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     background-color: $bg-color;
+}
 
+a{
+    text-decoration: none;
 }
 
 //mixin pour le responsive design
