@@ -1,0 +1,134 @@
+.box-projects {
+    width: 100%;
+    overflow: hidden;
+    height: max-content;
+    border-radius: 9px;
+    background-color: $dark-grey;
+    overflow: hidden;
+
+    &__cover {
+        width: 100%;
+        height: 17rem;
+        overflow: hidden;
+        padding: 15px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: -8px;
+        width: 100%;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 26px 20px 26px 20px;
+
+        .first-section {
+            height: 14rem;
+
+            @include screen-x(1000px, 1058px) {
+                height: 18rem;
+            }
+
+            @include screen-x(1060px, 1204px) {
+                height: 18rem;
+            }
+
+            @include screen(medium){
+                height: 18rem;
+            }
+
+            @include screen(small){
+                height: max-content;
+            }
+
+            .langages {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin-top: 12px;
+
+                .item {
+
+                    p {
+                        border: 2px solid rgb(30, 66, 224);
+                        color: #fff;
+                        padding: 4px 15px 4px 15px;
+                        width: max-content;
+                        border-radius: 27px;
+                        margin-bottom: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .header {
+                h5 {
+                    color: #fff;
+                    font-weight: bold;
+
+                    @include screen-x(1000px, 1056px) {
+                        font-size: 18px;
+                    }
+
+                    @include screen-x(280px, 330px) {
+                        font-size: 17px;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 20px;
+            margin-top: 35px;
+            white-space: nowrap;
+
+            .btn {
+                width: 100%;
+
+                img {
+                    width: 23px;
+                    position: relative;
+                    left: -5px;
+                }
+            }
+
+            .btn-1 {
+                width: 50%;
+                background-color: $yellow;
+                border-radius: 7px;
+
+            }
+
+            .btn-2 {
+                width: 50%;
+                background-color: $black;
+                border-radius: 7px;
+
+                img {
+                    width: 31px;
+                    position: relative;
+                    left: -5px;
+                }
+
+                .btn {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

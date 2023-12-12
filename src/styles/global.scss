@@ -4,7 +4,6 @@
 @import "./navbar.scss";
 
 /* ===================home styles=============== */
-@import "./home/navbar-responsive.scss";
 @import "./home/hero.scss";
 @import "./home/overview.scss";
 @import "./home/About.scss";
@@ -19,3 +18,9 @@
 @import "./techno/hero.scss";
 @import "./techno/tools.scss";
 @import "./techno/tools-card.scss";
+
+
+@import "./projects/projects.scss";
+@import "./projects/cover.scss";
+@import "./projects/projects-card.scss";
+@import "./projects/projects-content.scss";

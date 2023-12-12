@@ -13,10 +13,6 @@
         height: max-content;
     }
 
-    @include screen(medium) {
-        height: 34.6rem;
-    }
-
     &__cover {
         width: 100%;
         height: 17rem;

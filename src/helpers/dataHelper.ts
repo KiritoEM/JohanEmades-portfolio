@@ -47,12 +47,25 @@ interface ItoolData {
   usage: string;
 }
 
+interface IprojectsData {
+  img: string;
+  title: string;
+  text: string;
+  techno: Itechno[];
+  urlDemo?: string;
+  urlGit?: string;
+}
+
+interface Itechno {
+  text: string;
+}
+
 export default function dataHelper() {
   //données pour le menu items
   const navItems: ImenuItems[] = [
     { label: "Home", url: "/", icon: faHome },
     { label: "Technos", url: "/techno", icon: faCode },
-    { label: "Projects", url: "", icon: faLaptop },
+    { label: "Projects", url: "/projects", icon: faLaptop },
     { label: "Contact", icon: faEnvelope, id: "btn-contact" },
   ];
 
@@ -93,7 +106,7 @@ export default function dataHelper() {
     {
       img: "/images/node.jpg",
       title: "Node js",
-      text: "Framework javascript for the serverside, for a flexible and powerful backend",
+      text: "Framework javascript for the serverside, for a flexible and powerful backend able to easy connect to Database",
       usage: "Backend",
     },
   ];
@@ -109,14 +122,6 @@ export default function dataHelper() {
     { icon: "/images/next-icon.svg" },
     { icon: "/images/node-icon.png" },
     { icon: "/images/type-icon.svg" },
-  ];
-
-  const MERNIcon: IMERNIcon[] = [
-    { icon: "/images/mongodb-icon.svg", label: "M" },
-    { icon: "/images/express-icon.png", label: "E" },
-    { icon: "/images/react-icones.png", label: "R" },
-    { icon: "/images/node-icon.png", label: "N" },
-    { icon: "/images/next-icon.svg", label: "N" },
   ];
 
   const toolData: ItoolData[] = [
@@ -194,7 +199,7 @@ export default function dataHelper() {
     },
     {
       img: "/images/tools/js.svg",
-      title: "Vanilla Javascript",
+      title: "Vanilla Js",
       text: `Vanilla" JavaScript allows a lightweight approach, without external dependencies, providing direct control over the code `,
       usage: "Frontend",
     },
@@ -206,6 +211,149 @@ export default function dataHelper() {
     },
   ];
 
+  const projectsData: IprojectsData[] = [
+    {
+      img: "/images/madagascar-visit.png",
+      title: "Madagascar Visit Company",
+      text: "My first experience with coding website for an travel agency to improve Madagascar Tourism",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
+      urlDemo: "https://madagascar-visite.com/",
+      urlGit: "https://github.com/KiritoEM/Madagascar-visit-compagny",
+    },
+    {
+      img: "/images/book-bay.png",
+      title: "Book-bay",
+      text: "Web app for selling Harry Potter books with cart for customer with PRICE using Google API Books",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Next" },
+        { text: "Boostrap" },
+      ],
+      urlDemo: "https://bookbaybynext.vercel.app/",
+      urlGit: "https://github.com/KiritoEM/Bookbay",
+    },
+    {
+      img: "/images/student-hub.png",
+      title: "Student-hub",
+      text: "Template web app for school website and for helping student to make register online",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Next" },
+        { text: "Node" },
+        { text: "MongoDB" },
+      ],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/StudentHub",
+    },
+    {
+      img: "/images/zara.png",
+      title: "Zara project",
+      text: "Zara project is an IFM topic for their hackathon , I was  front-end developer for this project",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Node" },
+        { text: "MongoDB" },
+      ],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/Zara",
+    },
+
+    {
+      img: "/images/otaku-vortex.png",
+      title: "Otaku-Vortex",
+      text: "App for an innovative Otaku community , with implemented web security to protect the community",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Next" },
+        { text: "Node" },
+        { text: "MongoDB" },
+        { text: "Socket.io" },
+      ],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/Otaku-vortex",
+    },
+    {
+      img: "/images/learn-share.png",
+      title: "Learn-Share",
+      text: "App for an innovative Study community , with implemented web security to protect the community",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Next" },
+        { text: "Node" },
+        { text: "MongoDB" },
+        { text: "Socket.io" },
+      ],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/LearnShare",
+    },
+    {
+      img: "/images/tools/node.png",
+      title: "Authentification-two-factor using node JS",
+      text: "Double authentification using node js with node-mailer for email sending code and speakeasy for code generator",
+      techno: [
+        { text: "Node" },
+        { text: "Node-mailer" },
+        { text: "Speak-easy" },
+        { text: "JWT" },
+        { text: "MongoDB" },
+      ],
+      urlDemo: "",
+      urlGit:
+        "https://github.com/KiritoEM/Authentification-two-factor-using-node-js",
+    },
+    {
+      img: "/images/nft-app.png",
+      title: "NFT-app",
+      text: "Integration of an figma template for NFT topic that I've seen in Figma",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Next" },
+        { text: "Boostrap" },
+        { text: "Firebase" },
+      ],
+      urlDemo: "https://nft-app-topaz.vercel.app/",
+      urlGit: "https://github.com/KiritoEM/NFT-app",
+    },
+    {
+      img: "/images/prime-crm.png",
+      title: "Prime-CRM",
+      text: "PrimeCRM website is an topic of ISPM Weekly December first Week",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
+      urlDemo: "https://weekly-december-front-1-rouge.vercel.app/",
+      urlGit: "https://github.com/KiritoEM/PrimeCRM",
+    },
+    {
+      img: "/images/tools/node.png",
+      title: "Pictures_Video-Save",
+      text: "Save pictures or video with node js to database MongoDB using express js and middleware Multer",
+      techno: [{ text: "Node" }, { text: "Multer" }, { text: "MongoDB" }],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/Saves-pictures_video",
+    },
+    {
+      img: "/images/page-book.png",
+      title: "Page-Book",
+      text: "Page-Book website is an topic of ISPM Weekly December second Week",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/PAGE-BOOK",
+    },
+    {
+      img: "/images/json-web-token.webp",
+      title: "Json Web Token With node JS",
+      text: "Authentification using Node js for backend langage , Json Web Token for application web safety ",
+      techno: [{ text: "Node" }, { text: "JWT" }, { text: "MongoDB" }],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/Node-js-Json-Web-Token-Authentification",
+    },
+  ];
+
   return {
     navItems,
     overviewData,
@@ -213,7 +361,7 @@ export default function dataHelper() {
     previewTechno,
     socialIcons,
     StackIcon,
-    MERNIcon,
     toolData,
+    projectsData,
   };
 }

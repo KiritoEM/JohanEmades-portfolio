@@ -68,7 +68,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     background-color: $bg-color;
+}
 
+a{
+    text-decoration: none;
 }
 
 //mixin pour le responsive design
@@ -95,5 +98,20 @@ body {
 @mixin screen-x($min , $max) {
     @media screen and (min-width: $min) and (max-width: $max) {
         @content;
+    }
+}
+
+@mixin rotationanimation {
+
+    animation: rotation 3s linear infinite;
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
     }
 }
