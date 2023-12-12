@@ -45,15 +45,15 @@ const ProjectsCard: React.FC<IprojectsProps> = ({
             <a href={`${urlDemo}`} target="_blank">
               <button className="btn">
                 <img src="/images/demo.svg" alt="" />
-                View demo
-              </button>
+                Demo
+              </button> 
             </a>
           </div>
           <div className="btn-2">
             <a href={`${urlGit}`} target="_blank">
               <button className="btn">
                 <img src="/images/git.png" alt="" />
-                Github Link
+                Github
               </button>
             </a>
           </div>
