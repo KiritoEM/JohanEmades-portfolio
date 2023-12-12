@@ -47,6 +47,19 @@ interface ItoolData {
   usage: string;
 }
 
+interface IprojectsData {
+  img: string;
+  title: string;
+  text: string;
+  techno: Itechno[];
+  urlDemo?: string;
+  urlGit?: string;
+}
+
+interface Itechno {
+  text: string;
+}
+
 export default function dataHelper() {
   //données pour le menu items
   const navItems: ImenuItems[] = [
@@ -110,7 +123,6 @@ export default function dataHelper() {
     { icon: "/images/node-icon.png" },
     { icon: "/images/type-icon.svg" },
   ];
-
 
   const toolData: ItoolData[] = [
     {
@@ -196,6 +208,17 @@ export default function dataHelper() {
       title: "JSON",
       text: `JSON is a lightweight data format , used to make easy the use of React to avoid to write many lines of code , it' s also used to send response between server and client`,
       usage: "Backend",
+    },
+  ];
+
+  const projectsData: IprojectsData[] = [
+    {
+      img: "/images/madagascar-visit.png",
+      title: "Madagascar Visit Company",
+      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quasi! Ducimus maiores nihil deserunt at, eos a expedita",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
+      urlDemo: "",
+      urlGit: "",
     },
   ];
 
