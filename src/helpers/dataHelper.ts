@@ -215,10 +215,18 @@ export default function dataHelper() {
     {
       img: "/images/madagascar-visit.png",
       title: "Madagascar Visit Company",
-      text: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quasi! Ducimus maiores nihil deserunt at, eos a expedita",
+      text: "My first experience with coding website for an travel agency to improve Madagascar Tourism",
       techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
-      urlDemo: "",
-      urlGit: "",
+      urlDemo: "https://madagascar-visite.com/",
+      urlGit: "https://github.com/KiritoEM/Madagascar-visit-compagny",
+    },
+    {
+      img: "/images/book-bay.png",
+      title: "Book-bay",
+      text: "Web app for selling Harry Potter books with cart for customer with PRICE and cart CRUD",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Next" } ,  { text: "Boostrap" }],
+      urlDemo: "https://madagascar-visite.com/",
+      urlGit: "https://github.com/KiritoEM/Madagascar-visit-compagny",
     },
   ];
 
@@ -230,6 +238,6 @@ export default function dataHelper() {
     socialIcons,
     StackIcon,
     toolData,
-    projectsData
+    projectsData,
   };
 }
