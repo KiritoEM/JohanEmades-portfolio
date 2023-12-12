@@ -1,0 +1,9 @@
+#projects-content{
+    width: 100%;
+    overflow: hidden;
+    height: max-content;
+    @include container;
+    margin-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
