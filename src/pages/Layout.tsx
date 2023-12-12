@@ -12,7 +12,7 @@ const Layout: React.FC<Ichilden> = ({ children }): JSX.Element => {
       <Navbar />
       {children}
       <footer>
-        {/* <Footer /> */}
+        <Footer />
       </footer>
     </Fragment>
   );

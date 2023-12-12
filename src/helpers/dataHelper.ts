@@ -223,11 +223,21 @@ export default function dataHelper() {
     {
       img: "/images/book-bay.png",
       title: "Book-bay",
-      text: "Web app for selling Harry Potter books with cart for customer with PRICE and cart CRUD",
+      text: "Web app for selling Harry Potter books with cart for customer with PRICE using Google API Books",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Next" } ,  { text: "Boostrap" }],
+      urlDemo: "https://bookbaybynext.vercel.app/",
+      urlGit: "https://github.com/KiritoEM/Bookbay",
+    },
+    {
+      img: "/images/book-bay.png",
+      title: "Book-bay",
+      text: "Web app for selling Harry Potter books with cart for customer with PRICE using Google API Books",
       techno: [{ text: "React" }, { text: "Typescript" }, { text: "Next" } ,  { text: "Boostrap" }],
       urlDemo: "https://madagascar-visite.com/",
       urlGit: "https://github.com/KiritoEM/Madagascar-visit-compagny",
     },
+    
+
   ];
 
   return {

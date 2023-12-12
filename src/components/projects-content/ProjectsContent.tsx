@@ -3,10 +3,11 @@ import dataHelper from "@/helpers/dataHelper";
 
 const ProjectsContent = (): JSX.Element => {
   const { projectsData } = dataHelper();
+  let reversedArray = projectsData.reverse();
   return (
     <section id="projects-content">
       <div className="row">
-        {projectsData.map((item, index) => (
+        {reversedArray.map((item, index) => (
           <div className="col-4" key={index}>
             <ProjectsCard {...item} />
           </div>

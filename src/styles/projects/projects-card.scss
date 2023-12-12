@@ -1,7 +1,7 @@
 .box-projects {
     width: 100%;
     overflow: hidden;
-    height: 39rem;
+    height: max-content;
     border-radius: 9px;
     background-color: $dark-grey;
     overflow: hidden;
@@ -29,43 +29,47 @@
         justify-content: space-between;
         padding: 26px 20px 26px 20px;
 
-        .langages {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 12px;
+        .first-section {
+            height: 13rem;
 
-            .item {
+            .langages {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin-top: 12px;
+
+                .item {
+
+                    p {
+                        border: 2px solid rgb(30, 66, 224);
+                        color: #fff;
+                        padding: 4px 15px 4px 15px;
+                        width: max-content;
+                        border-radius: 27px;
+                        margin-bottom: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .header {
+                h5 {
+                    color: #fff;
+                    font-weight: bold;
+
+                    @include screen-x(1000px, 1056px) {
+                        font-size: 18px;
+                    }
+
+                    @include screen-x(280px, 330px) {
+                        font-size: 17px;
+                    }
+                }
 
                 p {
-                    border: 2px solid rgb(30, 66, 224);
                     color: #fff;
-                    padding: 4px 15px 4px 15px;
-                    width: max-content;
-                    border-radius: 27px;
-                    margin-bottom: 0;
-                    font-size: 13px;
                 }
-            }
-        }
-
-        .header {
-            h5 {
-                color: #fff;
-                font-weight: bold;
-
-                @include screen-x(1000px, 1056px) {
-                    font-size: 18px;
-                }
-
-                @include screen-x(280px, 330px) {
-                    font-size: 17px;
-                }
-            }
-
-            p {
-                color: #fff;
             }
         }
 
