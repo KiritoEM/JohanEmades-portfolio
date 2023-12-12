@@ -32,6 +32,22 @@
         .first-section {
             height: 14rem;
 
+            @include screen-x(1000px, 1058px) {
+                height: 18rem;
+            }
+
+            @include screen-x(1060px, 1204px) {
+                height: 18rem;
+            }
+
+            @include screen(medium){
+                height: 18rem;
+            }
+
+            @include screen(small){
+                height: max-content;
+            }
+
             .langages {
                 width: 100%;
                 display: flex;

@@ -6,9 +6,9 @@ const ProjectsContent = (): JSX.Element => {
   let reversedArray = projectsData.reverse();
   return (
     <section id="projects-content">
-      <div className="row gy-4">
+      <div className="row gy-5">
         {reversedArray.map((item, index) => (
-          <div className="col-4" key={index}>
+          <div className="col-md-6 col-lg-4" key={index}>
             <ProjectsCard {...item} />
           </div>
         ))}

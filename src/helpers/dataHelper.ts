@@ -291,6 +291,67 @@ export default function dataHelper() {
       urlDemo: "",
       urlGit: "https://github.com/KiritoEM/LearnShare",
     },
+    {
+      img: "/images/tools/node.png",
+      title: "Authentification-two-factor using node JS",
+      text: "Double authentification using node js with node-mailer for email sending code and speakeasy for code generator",
+      techno: [
+        { text: "Node" },
+        { text: "Node-mailer" },
+        { text: "Speak-easy" },
+        { text: "JWT" },
+        { text: "MongoDB" },
+      ],
+      urlDemo: "",
+      urlGit:
+        "https://github.com/KiritoEM/Authentification-two-factor-using-node-js",
+    },
+    {
+      img: "/images/nft-app.png",
+      title: "NFT-app",
+      text: "Integration of an figma template for NFT topic that I've seen in Figma",
+      techno: [
+        { text: "React" },
+        { text: "Typescript" },
+        { text: "Next" },
+        { text: "Boostrap" },
+        { text: "Firebase" },
+      ],
+      urlDemo: "https://nft-app-topaz.vercel.app/",
+      urlGit: "https://github.com/KiritoEM/NFT-app",
+    },
+    {
+      img: "/images/prime-crm.png",
+      title: "Prime-CRM",
+      text: "PrimeCRM website is an topic of ISPM Weekly December first Week",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
+      urlDemo: "https://weekly-december-front-1-rouge.vercel.app/",
+      urlGit: "https://github.com/KiritoEM/PrimeCRM",
+    },
+    {
+      img: "/images/tools/node.png",
+      title: "Pictures_Video-Save",
+      text: "Save pictures or video with node js to database MongoDB using express js and middleware Multer",
+      techno: [{ text: "Node" }, { text: "Multer" }, { text: "MongoDB" }],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/Saves-pictures_video",
+    },
+    {
+      img: "/images/page-book.png",
+      title: "Page-Book",
+      text: "Page-Book website is an topic of ISPM Weekly December second Week",
+      techno: [{ text: "React" }, { text: "Typescript" }, { text: "Boostrap" }],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/PAGE-BOOK",
+    },
+    {
+      img: "/images/json-web-token.webp",
+      title: "Json Web Token With node JS",
+      text: "Authentification using Node js for backend langage , Json Web Token for application web safety ",
+      techno: [{ text: "Node" }, { text: "JWT" }, { text: "MongoDB" }],
+      urlDemo: "",
+      urlGit: "https://github.com/KiritoEM/Node-js-Json-Web-Token-Authentification",
+    },
   ];
 
   return {
