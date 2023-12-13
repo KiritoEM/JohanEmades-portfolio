@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const Overview = (): JSX.Element => {
   const { overviewData } = dataHelper();
-  const [counts, setCounts] = useState([0, 0, 0]);
+  const [counts, setCounts] = useState([0, 0]);
   const [shouldIncrement, setShouldIncrement] = useState(false);
 
   //init useinView
@@ -30,7 +30,6 @@ const Overview = (): JSX.Element => {
     }
   }, [inView, shouldIncrement]);
 
-  
   useEffect(() => {
     if (inView && !shouldIncrement) {
       setShouldIncrement(true);
@@ -44,7 +43,11 @@ const Overview = (): JSX.Element => {
           {overviewData.map((item, index) => (
             <div className="col-6 col-md-4" key={index}>
               <div className="overview-item" id={item.id}>
-                <h3>{counts[index]}</h3>
+                {counts[index] ? (
+                  <h3>{counts[index]}</h3>
+                ) : (
+                  <h3>{item.statistic}</h3>
+                )}
                 <h5>{item.label}</h5>
               </div>
             </div>

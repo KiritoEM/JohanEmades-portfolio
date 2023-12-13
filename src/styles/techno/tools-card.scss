@@ -19,6 +19,10 @@
         overflow: hidden;
         padding: 15px;
 
+        @include screen(small) {
+            height: 15rem;
+        }
+
         img {
             width: 100%;
             height: 100%;

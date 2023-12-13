@@ -72,7 +72,7 @@ export default function dataHelper() {
   const overviewData = [
     { label: "Projects", statistic: 15 },
     { label: "Repositories", statistic: 21, id: "second-column" },
-    { label: "Contributions", statistic: 7, id: "last-column" },
+    { label: "Contributions", statistic: 521, id: "last-column" },
   ];
 
   const journeyData: IjourneyData[] = [
