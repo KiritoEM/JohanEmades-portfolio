@@ -79,13 +79,13 @@ export default function dataHelper() {
     {
       icon: faGraduationCap,
       img: "/images/day1.jpg",
-      text: "",
+      text: "I obtained my Bacc series D in 2023 at Les Bambinos II Avaratana Mamba high school. I have already considered the programmation branch since high school since it fascinated me. I' m not the best in this domain but I try to follow my dream , my path.",
       title: "High School grade",
     },
     {
       icon: faUniversity,
       img: "/images/day2.jpg",
-      text: "",
+      text: "I chose ISPM Antsobolo to continue my studies in programming. I learned a lot of things in L1, more precisely the basics of the coding game by carrying out a few projects, then I decided to deepen web programming",
       title: "University License 1",
     },
   ];
@@ -350,7 +350,8 @@ export default function dataHelper() {
       text: "Authentification using Node js for backend langage , Json Web Token for application web safety ",
       techno: [{ text: "Node" }, { text: "JWT" }, { text: "MongoDB" }],
       urlDemo: "",
-      urlGit: "https://github.com/KiritoEM/Node-js-Json-Web-Token-Authentification",
+      urlGit:
+        "https://github.com/KiritoEM/Node-js-Json-Web-Token-Authentification",
     },
   ];
 

@@ -41,12 +41,7 @@ const JourneyCard: React.FC<IjourneyProps> = ({
                   </div>
                   <div className="line"></div>
                   <div className="text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolore hic magni eveniet facilis at laboriosam iste fuga
-                      deleniti ab unde. Odio repellendus nihil soluta explicabo
-                      blanditiis optio at eaque possimus.
-                    </p>
+                    <p>{text}</p>
                   </div>
                 </div>
               </div>
