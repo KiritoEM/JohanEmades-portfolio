@@ -54,8 +54,8 @@
             padding-top: 3rem;
 
             @include screen(medium) {
-               margin-top: -3rem;
-           }
+                margin-top: -3rem;
+            }
 
             .subtitle {
                 display: flex;
@@ -93,7 +93,7 @@
                     font-size: 17px;
 
                     @include screen(medium) {
-                         font-size: 16.7px;
+                        font-size: 16.7px;
                     }
                 }
             }
